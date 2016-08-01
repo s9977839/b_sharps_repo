@@ -1,0 +1,227 @@
+/*!
+ * CSS theBsharps - v. 2.0
+ * 2015 - The B Sharps
+ * Based on Bootstrap
+*/
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.72222;
+  background-color: #fdfdfd;
+}
+
+a{
+  color: #666666;
+}
+
+a:hover{
+  color: #62366F;
+  text-decoration: none;
+}
+
+.navbar-default {
+background: #333333;
+background: -moz-linear-gradient(top, #333333 0%, #262626 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#262626));
+background: -webkit-linear-gradient(top, #333333 0%,#262626 100%);
+background: -o-linear-gradient(top, #333333 0%,#262626 100%);
+background: -ms-linear-gradient(top, #333333 0%,#262626 100%);
+background: linear-gradient(to bottom, #333333 0%,#262626 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#262626',GradientType=0 );
+border: none;
+border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ededed;
+}
+
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #FFFFFF;
+background: #99bfcf;
+background: -moz-linear-gradient(top, #99bfcf 0%, #99bfcf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99bfcf), color-stop(100%,#99bfcf));
+background: -webkit-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: -o-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: -ms-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: linear-gradient(to bottom, #99bfcf 0%,#99bfcf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99bfcf', endColorstr='#99bfcf',GradientType=0 );
+border-radius: 5px;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #333333;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ededed;
+  background-color: #99bfcf;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #0099c0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: #99bfcf;
+background: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+color: #FFFFFF;
+background: #99bfcf;
+background: -moz-linear-gradient(top, #99bfcf 0%, #99bfcf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99bfcf), color-stop(100%,#99bfcf));
+background: -webkit-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: -o-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: -ms-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: linear-gradient(to bottom, #99bfcf 0%,#99bfcf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99bfcf', endColorstr='#99bfcf',GradientType=0 );
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #666;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background: #99bfcf;
+background: -moz-linear-gradient(top, #99bfcf 0%, #99bfcf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99bfcf), color-stop(100%,#99bfcf));
+background: -webkit-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: -o-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: -ms-linear-gradient(top, #99bfcf 0%,#99bfcf 100%);
+background: linear-gradient(to bottom, #99bfcf 0%,#99bfcf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99bfcf', endColorstr='#99bfcf',GradientType=0 );
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-link:hover {
+  color: #ededed;
+}
+
+.nav li a:hover{
+    background: transparent;
+}
+.panel-default .panel-heading{
+    background-color: #9bbfd1;
+}
+
+/*  CSS for the main navigation menu */
+.navbar-default .navbar-nav>li>a {
+    color: #fdfdfd;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+}
+
+/* CSS for the side box menus */
+.menu-column .panel-default .panel-heading a {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ededed;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ededed;
+    background-color: #0099c0;
+  }
+}
+
+/* CSS for breadcrumbs */
+.breadcrumb{
+  background: #9bbfd1;
+}
+
+.breadcrumb>.active {
+    color: #fdfdfd;
+}
+
+/* CSS for footer */
+footer{
+  background: #232323;
+  color: #837E76;
+  border-top: 2px solid #99bfcf;
+}
+
+footer a{
+  color: #99bfcf;
+}
+footer a:hover{
+  color: #99bfcf;
+}
+.menu-column .panel-default .panel-heading{
+   background-color: #99bfcf;
+   border-color: #444;
+}
+
+.menu-column .panel-default .panel-heading a{
+    color: #fdfdfd;
+}
+
+.menu-column .panel-default .panel-body{
+    background-color: #F5F5F5;
+}
+
+#page-content .panel{
+    background: none;
+    border: 1px solid #D3D3D3;
+    box-shadow: none;
+}
+
+/* CSS for primary buttons */
+.btn-primary {
+    background-color: #99bfcf;
+    border-color: #99bfcf;
+}
+
+/* CSS for primary buttons on hover */
+.btn-primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+/* CSS for title header */
+.page-header {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}

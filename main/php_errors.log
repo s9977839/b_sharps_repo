@@ -1,0 +1,558 @@
+[18-Jul-2016 20:50:22 UTC] Invalid address: [no address given]
+[19-Jul-2016 00:54:16 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[19-Jul-2016 09:20:29 UTC] Invalid address: [no address given]
+[21-Jul-2016 05:03:00 UTC] Invalid address: [no address given]
+[21-Jul-2016 22:19:57 UTC] Invalid address: [no address given]
+[22-Jul-2016 05:13:51 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[22-Jul-2016 05:14:15 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[26-Jul-2016 11:42:57 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[26-Jul-2016 11:45:13 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[29-Jul-2016 06:51:07 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[31-Jul-2016 00:59:26 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 00:59:29 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 00:59:47 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 00:59:50 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 00:59:56 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Canot%'
+        OR posts.post_text LIKE '%Canot%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:00 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Cant%'
+        OR posts.post_text LIKE '%Cant%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:11 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Cant%'
+        OR posts.post_text LIKE '%Cant%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:14 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+                AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:25 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:31 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:40 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+        //        AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:00:43 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+        //        AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/        AND posts.thread_id = threads.thread_id
+        //        AND item_prop' at line 6
+[31-Jul-2016 01:01:02 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:01:24 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:01:38 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+        //    WHERE
+        //        posts.c_id = 1
+        //        AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+        //        AND posts.visible = 1
+        //        AND item_property.tool = 'forum_thread'
+        //        AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+        //        GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '//    WHERE
+        //        posts.c_id = 1
+        //        AND item_property' at line 3
+[31-Jul-2016 01:01:41 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+        //    WHERE
+        //        posts.c_id = 1
+        //        AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+        //        AND posts.visible = 1
+        //        AND item_property.tool = 'forum_thread'
+        //        AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+        //        GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '//    WHERE
+        //        posts.c_id = 1
+        //        AND item_property' at line 3
+[31-Jul-2016 01:01:57 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+        //    WHERE
+        //        posts.c_id = 1
+        //        AND item_property.c_id = 1
+        //        AND posts.thread_id = threads.thread_id
+        //        AND item_property.ref = threads.thread_id
+        //        AND item_property.visibility = 1
+        //        AND item_property.session_id = 0
+        //        AND posts.visible = 1
+        //        AND item_property.tool = 'forum_thread'
+        //        AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+        //        GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '//    WHERE
+        //        posts.c_id = 1
+        //        AND item_property' at line 3
+[31-Jul-2016 01:02:15 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:02:20 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:02:26 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:02:34 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:03:22 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:05:37 UTC] An exception occurred while executing 'SELECT DISTINCT s.id, name, access_start_date, access_end_date
+                FROM session s
+                INNER JOIN session_rel_course_rel_user session_rc_ru
+                ON session_rc_ru.session_id = s.id AND session_rc_ru.user_id = '1'
+                WHERE
+                    session_rc_ru.c_id = '1' AND
+                    session_rc_ru.status = 2 AND
+                    session_rc_ru.session_id = '0'':
+
+SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.
+[31-Jul-2016 01:08:42 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //            AND item_property.session_id = 0
+                AND posts.visible = 1':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/            AND item_property.session_id = 0
+                AND posts.visible ' at line 9
+[31-Jul-2016 01:08:44 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //            AND item_property.session_id = 0
+                AND posts.visible = 1':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/            AND item_property.session_id = 0
+                AND posts.visible ' at line 9
+[31-Jul-2016 01:09:04 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //          AND item_property.session_id = 0
+                AND posts.visible = 1':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/          AND item_property.session_id = 0
+                AND posts.visible = ' at line 9
+[31-Jul-2016 01:09:06 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //          AND item_property.session_id = 0
+                AND posts.visible = 1':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/          AND item_property.session_id = 0
+                AND posts.visible = ' at line 9
+[31-Jul-2016 01:09:31 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //          AND item_property.session_id = 0
+    //            AND posts.visible = 1
+                AND item_property.tool = 'forum_thread' ':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/          AND item_property.session_id = 0
+    //            AND posts.visible ' at line 9
+[31-Jul-2016 01:09:33 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //          AND item_property.session_id = 0
+    //            AND posts.visible = 1
+                AND item_property.tool = 'forum_thread' ':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/          AND item_property.session_id = 0
+    //            AND posts.visible ' at line 9
+[31-Jul-2016 01:09:59 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //          AND item_property.session_id = 0
+    //            AND posts.visible = 1
+    //            AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/          AND item_property.session_id = 0
+    //            AND posts.visible ' at line 9
+[31-Jul-2016 01:10:01 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+    //          AND item_property.session_id = 0
+    //            AND posts.visible = 1
+    //            AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/          AND item_property.session_id = 0
+    //            AND posts.visible ' at line 9
+[31-Jul-2016 01:35:10 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[31-Jul-2016 01:35:29 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+          //    AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%submit%'
+        OR posts.post_text LIKE '%submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/    AND item_property.session_id = 0
+                AND posts.visible = 1
+    ' at line 9
+[31-Jul-2016 01:35:32 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+          //    AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%submit%'
+        OR posts.post_text LIKE '%submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/    AND item_property.session_id = 0
+                AND posts.visible = 1
+    ' at line 9
+[31-Jul-2016 01:35:35 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+          //    AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/    AND item_property.session_id = 0
+                AND posts.visible = 1
+    ' at line 9
+[31-Jul-2016 01:35:57 UTC] An exception occurred while executing 'SELECT posts.*
+            FROM c_forum_post posts, c_forum_thread threads, c_item_property item_property
+            WHERE
+                posts.c_id = 1
+                AND item_property.c_id = 1
+                AND posts.thread_id = threads.thread_id
+                AND item_property.ref = threads.thread_id
+                AND item_property.visibility = 1
+          //    AND item_property.session_id = 0
+                AND posts.visible = 1
+                AND item_property.tool = 'forum_thread'
+                AND 
+        (posts.post_title LIKE '%Submit%'
+        OR posts.post_text LIKE '%Submit%')
+                GROUP BY posts.post_id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/    AND item_property.session_id = 0
+                AND posts.visible = 1
+    ' at line 9
+[31-Jul-2016 01:38:00 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[01-Aug-2016 09:13:44 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all

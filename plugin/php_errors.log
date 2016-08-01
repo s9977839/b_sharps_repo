@@ -1,0 +1,724 @@
+[13-Jul-2016 00:57:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 00:57:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=openmeetings&userpass=bsh%40rp5
+[13-Jul-2016 00:57:49 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 00:59:30 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 00:59:30 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=openmeetings&userpass=bsharps
+[13-Jul-2016 00:59:30 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 00:59:52 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 00:59:52 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=openmeetings&userpass=bsharps
+[13-Jul-2016 00:59:52 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 00:59:59 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 00:59:59 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=openmeetings&userpass=bsharps
+[13-Jul-2016 00:59:59 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 04:32:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 04:32:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=openmeetings&userpass=bsharps
+[13-Jul-2016 04:32:49 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 04:44:29 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 04:44:29 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 04:44:29 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 04:52:00 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 04:52:00 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 04:52:00 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 05:21:12 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 05:21:12 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 05:21:12 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 07:07:32 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 07:07:32 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 07:07:32 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 07:11:08 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/getSession
+[13-Jul-2016 07:11:08 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 07:11:08 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:02:39 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://localhost:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:02:39 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://localhost:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:02:39 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:03:51 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:03:51 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:03:51 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:03:54 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:03:54 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:03:54 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:04:08 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:04:08 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:04:08 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:05:20 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:05:20 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 302 Request http://bits-bsharp-melbnetworks.c9users.io:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:05:20 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:06:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:06:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:06:49 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:11:14 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:11:14 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:11:14 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:11:18 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:11:18 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:11:18 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:12:18 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:12:18 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:12:18 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[13-Jul-2016 23:19:56 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/getSession
+[13-Jul-2016 23:19:56 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://127.0.0.1:8082/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[13-Jul-2016 23:19:56 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 01:25:16 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 01:25:16 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 01:25:16 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 01:25:20 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 01:25:20 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 01:25:20 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 01:26:51 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 01:26:51 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 01:26:51 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 01:27:42 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 01:27:43 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 01:27:43 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 01:29:00 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 01:29:00 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 01:29:00 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 01:32:28 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 01:32:28 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 01:32:28 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 03:23:48 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 03:23:49 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 03:23:49 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[14-Jul-2016 03:54:38 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/getSession
+[14-Jul-2016 03:54:38 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.65.49.101:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[14-Jul-2016 03:54:38 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[15-Jul-2016 00:33:13 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/getSession
+[15-Jul-2016 00:33:13 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[15-Jul-2016 00:33:13 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[15-Jul-2016 02:04:02 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/getSession
+[15-Jul-2016 02:04:03 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[15-Jul-2016 02:04:03 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[15-Jul-2016 02:07:00 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/getSession
+[15-Jul-2016 02:07:00 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[15-Jul-2016 02:07:00 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[15-Jul-2016 05:23:27 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 92)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/getSession
+[15-Jul-2016 05:23:27 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 109)  returned an unexpected HTTP status of: 500 Request http://52.63.110.155:5080/openmeetings/services/UserService/loginUser?SID=&username=admin&userpass=bsharps
+[15-Jul-2016 05:23:27 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+80: Could not initiate session with server through OpenMeetingsGateway::loginUser()
+[17-Jul-2016 11:49:02 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[17-Jul-2016 11:49:22 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[17-Jul-2016 11:50:29 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[17-Jul-2016 11:50:35 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[17-Jul-2016 11:51:15 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[18-Jul-2016 10:15:28 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[18-Jul-2016 10:15:31 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[18-Jul-2016 10:16:24 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[18-Jul-2016 10:16:42 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[18-Jul-2016 10:16:52 UTC] PHP Parse error:  syntax error, unexpected '$test' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/lms/plugin/openmeetings/test.php on line 16
+[18-Jul-2016 10:28:00 UTC] PHP Fatal error:  require_once(): Failed opening required '/plugin/openmeetings/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lms/plugin/openmeetings/lib.php on line 38
+[18-Jul-2016 10:28:00 UTC] PHP Stack trace:
+[18-Jul-2016 10:28:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/openmeetings/lib.php:0
+[18-Jul-2016 11:32:40 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 1
+    [c_id] => 1
+    [session_id] => 0
+    [room_id] => 10
+    [meeting_name] => C1-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:32:14
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:33:37 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 1
+    [c_id] => 1
+    [session_id] => 0
+    [room_id] => 10
+    [meeting_name] => C1-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:32:14
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:34:44 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 1
+    [c_id] => 1
+    [session_id] => 0
+    [room_id] => 10
+    [meeting_name] => C1-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:32:14
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:34:56 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 1
+    [c_id] => 1
+    [session_id] => 0
+    [room_id] => 10
+    [meeting_name] => C1-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:32:14
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:35:08 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 1
+    [c_id] => 1
+    [session_id] => 0
+    [room_id] => 10
+    [meeting_name] => C1-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:32:14
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:36:08 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 1
+    [c_id] => 1
+    [session_id] => 0
+    [room_id] => 10
+    [meeting_name] => C1-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:32:14
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:36:18 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 276)  returned an unexpected HTTP status of: 500 Request http://52.63.60.4:5080/openmeetings/services/RoomService/deleteRoom?SID=817941c92383503864c9540c768bcbd7&rooms_id=
+[18-Jul-2016 11:42:54 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:45:52 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:45:57 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:46:09 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 11:46:15 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 12:17:35 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 12:17:50 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 20:44:16 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 20:46:08 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 2
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 11:39:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[18-Jul-2016 20:46:56 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 276)  returned an unexpected HTTP status of: 500 Request http://52.63.60.4:5080/openmeetings/services/RoomService/deleteRoom?SID=738eb197ae37090ebc7be3e3f2e16a41&rooms_id=
+[19-Jul-2016 07:42:11 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 3
+    [c_id] => 2
+    [session_id] => 1
+    [room_id] => 12
+    [meeting_name] => C2-1
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 20:56:29
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 07:42:21 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 3
+    [c_id] => 2
+    [session_id] => 1
+    [room_id] => 12
+    [meeting_name] => C2-1
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 20:56:29
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 07:42:40 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 3
+    [c_id] => 2
+    [session_id] => 1
+    [room_id] => 12
+    [meeting_name] => C2-1
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 20:56:29
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 07:42:45 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 3
+    [c_id] => 2
+    [session_id] => 1
+    [room_id] => 12
+    [meeting_name] => C2-1
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 20:56:29
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 09:36:07 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 3
+    [c_id] => 2
+    [session_id] => 1
+    [room_id] => 12
+    [meeting_name] => C2-1
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 20:56:29
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 09:38:12 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 3
+    [c_id] => 2
+    [session_id] => 1
+    [room_id] => 12
+    [meeting_name] => C2-1
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-18 20:56:29
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 09:38:43 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 276)  returned an unexpected HTTP status of: 500 Request http://52.63.60.4:5080/openmeetings/services/RoomService/deleteRoom?SID=270d9c6d69058ea014f68cf0e052da76&rooms_id=
+[19-Jul-2016 09:45:55 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 4
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 14
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 09:40:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 09:46:03 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 4
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 14
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 09:40:53
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 09:46:14 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 4
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 14
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 0
+    [created_at] => 2016-07-19 09:40:53
+    [closed_at] => 2016-07-19 09:46:14
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 09:46:21 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 276)  returned an unexpected HTTP status of: 500 Request http://52.63.60.4:5080/openmeetings/services/RoomService/deleteRoom?SID=6135c08511fd59362da3b520b2b05b00&rooms_id=
+[19-Jul-2016 10:10:22 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 5
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 15
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 10:10:16
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 10:11:53 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 5
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 15
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 10:10:16
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 10:25:24 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 5
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 15
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 10:10:16
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 10:25:34 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 5
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 15
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 10:10:16
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 10:25:45 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 276)  returned an unexpected HTTP status of: 500 Request http://52.63.60.4:5080/openmeetings/services/RoomService/deleteRoom?SID=961c9e6cb381af48fcd2155837e863f1&rooms_id=
+[19-Jul-2016 11:08:46 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 6
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 16
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 10:25:50
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 11:08:57 UTC] Your call to OpenMeetings Web Services  (from /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings_gateway.php at line 276)  returned an unexpected HTTP status of: 500 Request http://52.63.60.4:5080/openmeetings/services/RoomService/deleteRoom?SID=012552121dfbf9b4746da7699b656aa4&rooms_id=
+[19-Jul-2016 11:09:13 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 7
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 11:09:08
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 11:10:44 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 7
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 11:09:08
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[19-Jul-2016 11:13:42 UTC] /home/ubuntu/workspace/lms/plugin/openmeetings/lib/openmeetings.class.php+420 Meetings found: Array
+(
+    [id] => 7
+    [c_id] => 2
+    [session_id] => 0
+    [room_id] => 11
+    [meeting_name] => C2-0
+    [attendee_pw] => 
+    [moderator_pw] => 
+    [record] => 1
+    [status] => 1
+    [created_at] => 2016-07-19 11:09:08
+    [closed_at] => 
+    [calendar_id] => 0
+    [welcome_msg] => 
+)
+
+[21-Jul-2016 21:11:54 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 21:13:30 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 21:17:05 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 21:17:07 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:20:53 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:21:56 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:22:00 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:22:26 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:22:31 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:24:09 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:27:44 UTC] PHP Parse error:  syntax error, unexpected 'er' (T_STRING) in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 81
+[21-Jul-2016 22:28:54 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/lms/plugin/bbb/start.php on line 82
+[21-Jul-2016 23:33:07 UTC] PHP Fatal error:  Call to a member function createMeetingWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 229
+[21-Jul-2016 23:33:07 UTC] PHP Stack trace:
+[21-Jul-2016 23:33:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/start.php:0
+[21-Jul-2016 23:33:07 UTC] PHP   2. bbb->createMeeting() /home/ubuntu/workspace/lms/plugin/bbb/start.php:62
+[21-Jul-2016 23:34:16 UTC] PHP Fatal error:  Call to a member function createMeetingWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 229
+[21-Jul-2016 23:34:16 UTC] PHP Stack trace:
+[21-Jul-2016 23:34:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/start.php:0
+[21-Jul-2016 23:34:16 UTC] PHP   2. bbb->createMeeting() /home/ubuntu/workspace/lms/plugin/bbb/start.php:62
+[21-Jul-2016 23:34:27 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:34:27 UTC] PHP Stack trace:
+[21-Jul-2016 23:34:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/start.php:0
+[21-Jul-2016 23:34:27 UTC] PHP   2. bbb->joinMeeting() /home/ubuntu/workspace/lms/plugin/bbb/start.php:53
+[21-Jul-2016 23:34:27 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:345
+[21-Jul-2016 23:35:02 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:35:02 UTC] PHP Stack trace:
+[21-Jul-2016 23:35:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:35:02 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:35:02 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:35:36 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:35:36 UTC] PHP Stack trace:
+[21-Jul-2016 23:35:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:35:36 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:35:36 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:35:47 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:35:47 UTC] PHP Stack trace:
+[21-Jul-2016 23:35:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:35:47 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:35:47 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:35:50 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:35:50 UTC] PHP Stack trace:
+[21-Jul-2016 23:35:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:35:50 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:35:50 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:39:28 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:39:28 UTC] PHP Stack trace:
+[21-Jul-2016 23:39:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:39:28 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:39:28 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:39:33 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:39:33 UTC] PHP Stack trace:
+[21-Jul-2016 23:39:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:39:33 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:39:33 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:39:36 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:39:36 UTC] PHP Stack trace:
+[21-Jul-2016 23:39:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:39:36 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:39:36 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[21-Jul-2016 23:42:50 UTC] PHP Fatal error:  Call to a member function getMeetingInfoWithXmlResponseArray() on a non-object in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php on line 417
+[21-Jul-2016 23:42:50 UTC] PHP Stack trace:
+[21-Jul-2016 23:42:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
+[21-Jul-2016 23:42:50 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
+[21-Jul-2016 23:42:50 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
