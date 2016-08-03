@@ -1,0 +1,26 @@
+<html>
+<head>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+</head>
+<body>
+
+        <!-- this UL will be populated with the data from the php array -->
+        <ul>Blah blah bah</ul>
+	<div id="output">this element will be accessed by jquery and this text replaced</div>
+
+        <script type='text/javascript'>
+        $(document).ready(function(){
+                /* call the php that has the php array which is json_encoded */
+                $.getJSON('api3.php', function(data) {
+                        /* data will hold the php array as a javascript object */
+                        $.each(data, function(key, val) {
+                                $('ul').append('<li id="' + key + '">' + val.id + ' ' + val.c_id + ' ' + val.title + '</li>');
+				$('#output').html("<b>id: </b>"+val.id+"<b> c_id: </b>"+val.c_id+"<b> title: </b><br>"+val.title); //Set output element html
+                        });
+                });
+
+        });
+        </script>
+
+</body>
+</html>

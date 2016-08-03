@@ -3118,8 +3118,8 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #333333;
+  border-color: #333333;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3166,8 +3166,8 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #333333;
+  border-color: #333333;
 }
 .btn-primary .badge {
   color: #337ab7;
@@ -3175,8 +3175,8 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #333333;
+  border-color: #333333;
 }
 .btn-success:focus,
 .btn-success.focus {

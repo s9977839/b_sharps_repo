@@ -78,5 +78,6 @@ return array(
     'CpChart\\' => array($vendorDir . '/szymach/c-pchart/src'),
     'Cocur\\Slugify\\' => array($vendorDir . '/cocur/slugify/src'),
     'Chamilo\\' => array($baseDir . '/src/Chamilo'),
+    'BigBlueButton\\' => array($vendorDir . '/bigbluebutton/bigbluebutton-api-php/src'),
     'Application\\' => array($baseDir . '/app'),
 );

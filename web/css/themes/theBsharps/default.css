@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.72222;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
 }
 
 a{
@@ -145,14 +145,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99bfcf', end
 
 /*  CSS for the main navigation menu */
 .navbar-default .navbar-nav>li>a {
-    color: #fdfdfd;
+    color: #ffffff;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 16px;
-}
-
-/* CSS for the side box menus */
-.menu-column .panel-default .panel-heading a {
-    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 @media (max-width: 767px) {
@@ -174,7 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99bfcf', end
 }
 
 .breadcrumb>.active {
-    color: #fdfdfd;
+    color: #ffffff;
 }
 
 /* CSS for footer */
@@ -190,17 +185,23 @@ footer a{
 footer a:hover{
   color: #99bfcf;
 }
+
+/* CSS for the side box menus */
+.menu-column .panel-default .panel-heading a {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
 .menu-column .panel-default .panel-heading{
    background-color: #99bfcf;
    border-color: #444;
 }
 
 .menu-column .panel-default .panel-heading a{
-    color: #fdfdfd;
+    color: #ffffff;
 }
 
 .menu-column .panel-default .panel-body{
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
 #page-content .panel{
@@ -224,4 +225,40 @@ footer a:hover{
 /* CSS for title header */
 .page-header {
   font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* CSS for the tables */
+td, th {
+    padding: 2px;
+}
+
+table {
+    margin: 20px 0px;
+    border-radius: 5px;
+    border-collapse: separate;
+    border-color: #ddd;
+    border-bottom: thin solid #ddd;
+    border-right: thin solid #ddd;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+}
+
+td:last-child {
+  	border-right: none;
+}
+
+td {
+    border-color: transparent;
+    border-right-color: #ddd;
+    border-bottom-color: #ddd;
+}
+
+tr:last-child td {
+  	border-bottom: none;
 }

@@ -74,7 +74,8 @@
         "imagine/imagine": "0.6.2",
         "essence/essence": "^2.5",
         "jeroendesloovere/vcard": "^1.2",
-        "phpoffice/phpword": "^0.12.1"
+        "phpoffice/phpword": "^0.12.1",
+        "bigbluebutton/bigbluebutton-api-php": "dev-master"
     },
     "require-dev": {
         "behat/behat": "2.5.*@stable",
