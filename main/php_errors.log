@@ -557,3 +557,6 @@ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in you
 [31-Jul-2016 01:38:00 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
 [01-Aug-2016 09:13:44 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
 [02-Aug-2016 00:35:14 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[04-Aug-2016 00:39:13 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[04-Aug-2016 00:40:14 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[04-Aug-2016 00:40:46 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all

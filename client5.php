@@ -9,7 +9,7 @@
   <div id="output">this element will be accessed by jquery and this text replaced</div>
 
   <script id="source" language="javascript" type="text/javascript">
-  document.write("Hi");
+  //document.write("Hi");
   //alert("Hello");
 
   $(setInterval(function () 
@@ -24,17 +24,15 @@
       dataType: 'json',                //data format      
       success: function(data)          //on recieve of reply
       {
-	document.write("Ajax!");
-//        var id = data['id'];              //get id
-//        var c_id = data[0][1];           //get name
-//	var title = data[0][2];		// get title
+	//document.write("Ajax!");
+	$('#output').html("")
 	$.each(data, function() { 
                 $.each(this, function(key, value){
-                    //alert(key + " --> " + value +title); 
-			//alert("Hey");
-			//document.write("It works..");
-			document.write(key + value);
+			//document.write(key + value);
+			//$('#output').remove();
+			$('#output').append("<b>" + key + "</b>: " + value + "   " );
                 });
+		$('#output').append("<br>");
             });
         //--------------------------------------------------------------------
         // 3) Update html content

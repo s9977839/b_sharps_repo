@@ -10,11 +10,12 @@ header("Content-type: text/javascript");
   //--------------------------------------------------------------------------
   // 2) Query database for data
   //--------------------------------------------------------------------------
-  $res = mysqli_query($con,"SELECT id, c_id, title FROM $tableName");          //query
+  $res = mysqli_query($con,"SELECT id, c_id, title, start_date FROM $tableName");          //query
   #$array = mysql_fetch_row($result);                          //fetch result    
   $result = array();
 
   // echo json_encode($table_data);
+
 while($row = mysqli_fetch_assoc($res)){
 	 $result[] = $row;
 
