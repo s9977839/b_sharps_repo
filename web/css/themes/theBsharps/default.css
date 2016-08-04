@@ -200,13 +200,17 @@ footer a:hover{
     color: #ffffff;
 }
 
-.menu-column .panel-default .panel-body{
+.panel-body{
     background-color: #f5f5f5;
 }
 
 .panel-title {
     color: #ffffff;
     font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.panel-default .panel-heading  a {
+    color: #ffffff;
 }
 
 #page-content .panel{
@@ -217,12 +221,23 @@ footer a:hover{
 
 /* CSS for primary buttons */
 .btn-primary {
-    background-color: #99bfcf;
-    border-color: #99bfcf;
+    background-color: #333333;
+    border-color: #333333;
 }
 
 /* CSS for primary buttons on hover */
 .btn-primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+/* CSS for teacher view button */
+.btn-success {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.btn-success:hover {
   background-color: #333333;
   border-color: #333333;
 }
@@ -281,4 +296,14 @@ tr:last-child td {
 /* CSS to remove skills from the side menu */
 #skill_block {
     display: none;
+}
+
+/* CSS to remove social invitations from the side menu, do not remove li. */
+li.invitations-social {
+    display: none;
+}
+
+/* CSS to remove social invitations from the side menu, do not remove li. */
+li.invitations-icon {
+  display: none;
 }

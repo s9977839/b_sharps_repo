@@ -560,3 +560,18 @@ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in you
 [04-Aug-2016 00:39:13 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
 [04-Aug-2016 00:40:14 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
 [04-Aug-2016 00:40:46 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[04-Aug-2016 03:30:14 UTC] PHP Fatal error:  Call to undefined method Skype::uninstall() in /home/ubuntu/workspace/lms/plugin/skype/uninstall.php on line 10
+[04-Aug-2016 03:30:14 UTC] PHP Stack trace:
+[04-Aug-2016 03:30:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/admin/settings.php:0
+[04-Aug-2016 03:30:14 UTC] PHP   2. handle_plugins() /home/ubuntu/workspace/lms/main/admin/settings.php:506
+[04-Aug-2016 03:30:14 UTC] PHP   3. store_plugins() /home/ubuntu/workspace/lms/main/admin/settings.lib.php:115
+[04-Aug-2016 03:30:14 UTC] PHP   4. AppPlugin->uninstall() /home/ubuntu/workspace/lms/main/admin/settings.lib.php:691
+[04-Aug-2016 03:30:14 UTC] PHP   5. require() /home/ubuntu/workspace/lms/main/inc/lib/plugin.lib.php:193
+[04-Aug-2016 03:37:06 UTC] PHP Fatal error:  Call to undefined method Skype::uninstall() in /home/ubuntu/workspace/lms/plugin/skype/uninstall.php on line 10
+[04-Aug-2016 03:37:06 UTC] PHP Stack trace:
+[04-Aug-2016 03:37:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/admin/settings.php:0
+[04-Aug-2016 03:37:06 UTC] PHP   2. handle_plugins() /home/ubuntu/workspace/lms/main/admin/settings.php:506
+[04-Aug-2016 03:37:06 UTC] PHP   3. store_plugins() /home/ubuntu/workspace/lms/main/admin/settings.lib.php:115
+[04-Aug-2016 03:37:06 UTC] PHP   4. AppPlugin->uninstall() /home/ubuntu/workspace/lms/main/admin/settings.lib.php:691
+[04-Aug-2016 03:37:06 UTC] PHP   5. require() /home/ubuntu/workspace/lms/main/inc/lib/plugin.lib.php:193
+[04-Aug-2016 06:42:30 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all

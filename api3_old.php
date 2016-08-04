@@ -10,7 +10,7 @@ header("Content-type: text/javascript");
   //--------------------------------------------------------------------------
   // 2) Query database for data
   //--------------------------------------------------------------------------
-  $res = mysqli_query($con,"SELECT b.id, a.title, b.code, a.videoconference, a.start_date FROM c_calendar_event a, course b where a.c_id = b.id;");          //query
+  $res = mysqli_query($con,"SELECT id, c_id, title, start_date FROM $tableName");          //query
   #$array = mysql_fetch_row($result);                          //fetch result    
   $result = array();
 

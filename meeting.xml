@@ -1,0 +1,23 @@
+<response>
+<returncode>SUCCESS</returncode>
+<meetings>
+<meeting>
+<meetingID>157a3b126ee0569.20132391</meetingID>
+<meetingName>BUILDINGITSYSTEMS-0</meetingName>
+<createTime>1470345510870</createTime>
+<createDate>Thu Aug 04 21:18:30 UTC 2016</createDate>
+<voiceBridge>85285</voiceBridge>
+<dialNumber>613-555-1234</dialNumber>
+<attendeePW>BUILDINGITSYSTEMS</attendeePW>
+<moderatorPW>BUILDINGITSYSTEMSmod</moderatorPW>
+<hasBeenForciblyEnded>false</hasBeenForciblyEnded>
+<running>true</running>
+<participantCount>1</participantCount>
+<listenerCount>0</listenerCount>
+<voiceParticipantCount>0</voiceParticipantCount>
+<videoCount>0</videoCount>
+<duration>300</duration>
+<hasUserJoined>true</hasUserJoined>
+</meeting>
+</meetings>
+</response>
