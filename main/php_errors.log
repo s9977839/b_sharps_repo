@@ -575,3 +575,192 @@ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in you
 [04-Aug-2016 03:37:06 UTC] PHP   4. AppPlugin->uninstall() /home/ubuntu/workspace/lms/main/admin/settings.lib.php:691
 [04-Aug-2016 03:37:06 UTC] PHP   5. require() /home/ubuntu/workspace/lms/main/inc/lib/plugin.lib.php:193
 [04-Aug-2016 06:42:30 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[05-Aug-2016 09:16:52 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 40
+[05-Aug-2016 09:16:52 UTC] PHP Stack trace:
+[05-Aug-2016 09:16:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 09:58:17 UTC] PHP Parse error:  syntax error, unexpected '$calendar' (T_VARIABLE) in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 52
+[05-Aug-2016 09:58:17 UTC] PHP Stack trace:
+[05-Aug-2016 09:58:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:01:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'DB_USER'@'localhost' (using password: YES)' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(43): PDO->__construct('mysql:host=loca...', 'DB_USER', 'DB_PW')
+#1 /home/ubuntu/workspace/lms/main/calendar/newcalendar.php(47): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 43
+[05-Aug-2016 10:02:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(43): PDO->__construct('mysql:host=loca...')
+#1 /home/ubuntu/workspace/lms/main/calendar/newcalendar.php(47): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 43
+[05-Aug-2016 10:11:49 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 56
+[05-Aug-2016 10:11:49 UTC] PHP Stack trace:
+[05-Aug-2016 10:11:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:12:03 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 56
+[05-Aug-2016 10:12:03 UTC] PHP Stack trace:
+[05-Aug-2016 10:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:14:18 UTC] An exception occurred while executing 'Select c_c_calendar_event.c_id, c_c_calendar_event.title, c_c_calendar_event.start_date, c_c_calendar_event.end_date, c_course.title
+					FROM c_c_calendar_event
+					Where start_date = 2016-08-01
+					LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id' at line 4
+[05-Aug-2016 10:15:26 UTC] An exception occurred while executing 'Select c_c_calendar_event.c_id, c_c_calendar_event.title, c_c_calendar_event.start_date, c_c_calendar_event.end_date, c_course.title
+					FROM c_c_calendar_event
+					Where start_date = 2016-08-01
+					LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id' at line 4
+[05-Aug-2016 10:15:46 UTC] An exception occurred while executing 'Select c_c_calendar_event.c_id, c_c_calendar_event.title, c_c_calendar_event.start_date, c_c_calendar_event.end_date, c_course.title
+					FROM c_c_calendar_event
+					Where start_date = 2016-08-01
+					LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id' at line 4
+[05-Aug-2016 10:16:04 UTC] An exception occurred while executing 'Select c_c_calendar_event.c_id, c_c_calendar_event.title, c_c_calendar_event.start_date, c_c_calendar_event.end_date, c_course.title
+					FROM c_c_calendar_event
+					Where start_date = 2016-08-01
+					LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id' at line 4
+[05-Aug-2016 10:17:20 UTC] An exception occurred while executing 'Select c_c_calendar_event.c_id, c_c_calendar_event.title, c_c_calendar_event.start_date, c_c_calendar_event.end_date, c_course.title
+					FROM c_c_calendar_event
+					Where start_date = 2016-08-01
+					LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN c_course
+					On c_c_calendar_event.c_id = c_course.id' at line 4
+[05-Aug-2016 10:18:17 UTC] An exception occurred while executing 'Select c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, course.title
+				FROM c_calendar_event
+				Where start_date = ;
+				LEFT JOIN course
+				On c_calendar_event.c_id = course.id;':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';
+				LEFT JOIN course
+				On c_calendar_event.c_id = course.id' at line 3
+[05-Aug-2016 10:18:26 UTC] An exception occurred while executing 'Select c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, course.title
+				FROM c_calendar_event
+				Where start_date = ;
+				LEFT JOIN course
+				On c_calendar_event.c_id = course.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';
+				LEFT JOIN course
+				On c_calendar_event.c_id = course.id' at line 3
+[05-Aug-2016 10:25:46 UTC] An exception occurred while executing 'Select c_TABLE_CALENDAR_EVENT.c_id, c_TABLE_CALENDAR_EVENT.title, c_TABLE_CALENDAR_EVENT.start_date, c_TABLE_CALENDAR_EVENT.end_date, c_TABLE_COURSE.title
+				FROM c_TABLE_CALENDAR_EVENT
+				Where start_date = today
+				LEFT JOIN c_TABLE_COURSE 
+				On c_TABLE_CALENDAR_EVENT.c_id = c_TABLE_COURSE.id':
+
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN c_TABLE_COURSE 
+				On c_TABLE_CALENDAR_EVENT.c_id = c_TABLE_COURSE.id' at line 4
+[05-Aug-2016 10:41:47 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 54
+[05-Aug-2016 10:41:47 UTC] PHP Stack trace:
+[05-Aug-2016 10:41:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:41:56 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 54
+[05-Aug-2016 10:41:56 UTC] PHP Stack trace:
+[05-Aug-2016 10:41:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:50:53 UTC] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 3
+[05-Aug-2016 10:50:53 UTC] PHP Stack trace:
+[05-Aug-2016 10:50:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:50:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:4
+[05-Aug-2016 10:50:53 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 3
+[05-Aug-2016 10:50:53 UTC] PHP Stack trace:
+[05-Aug-2016 10:50:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:50:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:4
+[05-Aug-2016 10:56:00 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 51
+[05-Aug-2016 10:56:00 UTC] PHP Stack trace:
+[05-Aug-2016 10:56:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:57:22 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 51
+[05-Aug-2016 10:57:22 UTC] PHP Stack trace:
+[05-Aug-2016 10:57:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 10:57:26 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 51
+[05-Aug-2016 10:57:26 UTC] PHP Stack trace:
+[05-Aug-2016 10:57:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:02:21 UTC] PHP Parse error:  syntax error, unexpected 'assoc' (T_STRING) in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 48
+[05-Aug-2016 11:02:21 UTC] PHP Stack trace:
+[05-Aug-2016 11:02:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:03:10 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 47
+[05-Aug-2016 11:03:10 UTC] PHP Stack trace:
+[05-Aug-2016 11:03:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:03:10 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:03:13 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 47
+[05-Aug-2016 11:03:13 UTC] PHP Stack trace:
+[05-Aug-2016 11:03:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:03:13 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:05:49 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 45
+[05-Aug-2016 11:05:49 UTC] PHP Stack trace:
+[05-Aug-2016 11:05:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:05:49 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:06:34 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 46
+[05-Aug-2016 11:06:34 UTC] PHP Stack trace:
+[05-Aug-2016 11:06:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:06:34 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:10:01 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 97
+[05-Aug-2016 11:10:01 UTC] PHP Stack trace:
+[05-Aug-2016 11:10:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:10:58 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 51
+[05-Aug-2016 11:10:58 UTC] PHP Stack trace:
+[05-Aug-2016 11:10:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:10:58 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:22:53 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 57
+[05-Aug-2016 11:22:53 UTC] PHP Stack trace:
+[05-Aug-2016 11:22:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:22:53 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:23:08 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 57
+[05-Aug-2016 11:23:08 UTC] PHP Stack trace:
+[05-Aug-2016 11:23:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:23:08 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:25:49 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:25:49 UTC] PHP Stack trace:
+[05-Aug-2016 11:25:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:25:49 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:26:24 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:26:24 UTC] PHP Stack trace:
+[05-Aug-2016 11:26:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:26:24 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:27:13 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:27:13 UTC] PHP Stack trace:
+[05-Aug-2016 11:27:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:27:13 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:28:55 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:28:55 UTC] PHP Stack trace:
+[05-Aug-2016 11:28:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:28:55 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:29:18 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:29:18 UTC] PHP Stack trace:
+[05-Aug-2016 11:29:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:29:18 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:30:45 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:30:45 UTC] PHP Stack trace:
+[05-Aug-2016 11:30:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:30:45 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:31:43 UTC] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:31:43 UTC] PHP Stack trace:
+[05-Aug-2016 11:31:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:31:43 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:31:55 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:31:55 UTC] PHP Stack trace:
+[05-Aug-2016 11:31:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:31:55 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:35:17 UTC] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 53
+[05-Aug-2016 11:35:17 UTC] PHP Stack trace:
+[05-Aug-2016 11:35:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 11:35:17 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:47
+[05-Aug-2016 11:37:09 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 55
+[05-Aug-2016 11:37:09 UTC] PHP Stack trace:
+[05-Aug-2016 11:37:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0
+[05-Aug-2016 12:22:09 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 60
+[05-Aug-2016 12:22:09 UTC] PHP Stack trace:
+[05-Aug-2016 12:22:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/newcalendar.php:0

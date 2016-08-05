@@ -1,6 +1,10 @@
 <?php 
 
 function draw_calendar($month,$year){
+
+	include 'db.php';
+	$connect = mysqli_connect('localhost', 'php', 'bsharps', 'chamilo');
+	
 	
 	/* draw table */
 	$calendar = '<table cellpadding="0" cellspacing="0" class="calendar">';
@@ -25,13 +29,35 @@ function draw_calendar($month,$year){
 		$days_in_this_week++;
 	endfor;
 
-	/* keep going with days.... */
+/* keep going with days.... */
 	for($list_day = 1; $list_day <= $days_in_month; $list_day++):
 		$calendar.= '<td class="calendar-day">';
 			/* add in the day number */
 			$calendar.= '<div class="day-number">'.$list_day.'</div>';
 
-			/** QUERY THE DATABASE FOR AN ENTRY FOR THIS DAY !!  IF MATCHES FOUND, PRINT THEM !! **/
+			// MEL CUSTOM WRITTEN CODE //
+
+			$today = $year . "-";
+			if ($month < 10) {$today .= "0" . $month;}
+			else {$today .= $month;}
+			$today .= "-";
+			if ($list_day < 10) {$today .= "0" . $list_day;}
+			else {$today .= $list_day;}
+			
+			if (mysqli_connect_errno()) {
+				printf("Connect failed: %s\n", mysqli_connect_error());
+    			exit();
+			}
+			
+			$query = "Select c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, course.title FROM c_calendar_event INNER JOIN course On course.id = c_calendar_event.c_id AND c_calendar_event.start_date LIKE '%$today%'";
+			$result = mysqli_query($connect, $query);
+			$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+			
+			$event = $row["c_id"] . $row["title"];
+			$calendar.= '<div class="event">'.$event.'</div>';
+			
+			// END OF MEL CUSTOM CODE
+			
 			$calendar.= str_repeat('<p> </p>',2);
 			
 		$calendar.= '</td>';
