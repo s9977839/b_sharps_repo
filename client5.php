@@ -130,11 +130,24 @@
 		//
 		//
 		$('#output').append(chattime + " " + testvalue + " "  +  "<br>");
-	
+		//
+		// grab a hash from hash.php return the hash to use as checksum in API call
+		//
+		$.ajax({
+  			type: "POST",
+  			url: 'hash.php',
+  			datatype: "html",
+  			data: 'input=snah' + chattime,
+  			success: function(data) {
+			$('#output').append("<br><br>End..." + data);  
+    			//alert(data);
+    			}
+		});
+		//
             });
       } 
     });
-  }, 1000)); 
+  }, 5000)); 
 
   </script>
   </body>
