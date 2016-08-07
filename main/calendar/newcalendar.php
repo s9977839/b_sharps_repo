@@ -4,18 +4,6 @@
     require_once'calendarfunctions.php'; 
     require_once '../inc/global.inc.php';
     ?>
-    <style>
-        table.calendar		{ border-left:1px solid #999; }
-        tr.calendar-row	{ height: 100px; vertical-align: top;}
-        td.calendar-day	{  font-size:11px; position:relative; } * html div.calendar-day { }
-        td.calendar-day:hover	{ background:#eceff5; }
-        td.calendar-day-np	{ background:#eee; min-height:200px; } * html div.calendar-day-np { height:200px; }
-        td.calendar-day-head { background:#ccc; font-weight:bold; text-align:center; width:120px; padding:5px; border-bottom:1px solid #999; border-top:1px solid #999; border-right:1px solid #999; }
-        div.day-number		{ background:#999; padding:5px; color:#fff; font-weight:bold; float:left; clear:both; margin:-5px -5px 0 0; width:20px; text-align:center; }
-        /* shared */
-        td.calendar-day, td.calendar-day-np { width:120px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; }
-        .event {color:red; font-size: 14px; clear:both; margin-top:30px; text-align:center;}
-        </style>
 </head>
 <body>
     <?php 
@@ -49,9 +37,15 @@
         
         /* bringing the controls together */
         $controls = '<form method="get">'.$select_month_control.$select_year_control.' <input type="submit" name="submit" value="Go" />      '.$previous_month_link.'     '.$next_month_link.' </form>';
+        $calendar = $controls;
+        $calendar .= draw_calendar($month, $year);
         
-        echo $controls;
-        echo draw_calendar($month, $year);
+        $tpl = new Template (get_lang('Agenda'));
+	    $tpl->assign('default_view', $defaultView);
+	    $tpl->assign('content', $calendar);
+        // Loading main Chamilo 1 col template
+	    $tpl->display_one_col_template();
+        
+        
    ?>
-    
 </body>

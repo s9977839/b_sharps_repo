@@ -69,7 +69,7 @@
 			//
 			// write out each key - value pair
 			//
-			//$('#output').append("<b>" + key + "</b>: " + value + "   " );
+			$('#output').append("<b>" + key + "</b>: " + value + "   " );
 			//
 			// if key is course code, set var to value
 			//
@@ -93,14 +93,12 @@
 		//
 		// generate meetingID
 		//
-		//guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
-		guid = 123456789
+		guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
 		//
-		// generate api call string
+		// generate meeting url
 		//
-		apicall = "createname=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod04c5360f439c3365ee7d63ea46e4e9df"  ;
-		$('#output').append( apicall + "<br>");
-		//$('#output').append("<br>" + meeturl + coursetitle + "&meetingid=" + guid + "&checksum=1231232312312" + "<br>");
+		meeturl = "http://yourserver.com/bbb/api/create?name=";
+		$('#output').append("<br>" + meeturl + coursetitle + "&meetingid=" + guid + "&checksum=1231232312312" + "<br>");
 		var testvalue = "";
 		//
 		//	
@@ -139,11 +137,9 @@
   			type: "POST",
   			url: 'hash.php',
   			datatype: "html",
-			data: apicall,
+  			data: 'input=snah' + chattime,
   			success: function(data) {
-			meetingurl = "create?name=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod" + "&checksum=" + data;
-			$('#output').append("<br><br>Create URL..." + meetingurl);  
-			//$('#output').append("<br><br>debug hash" + data);
+			$('#output').append("<br><br>End..." + data);  
     			//alert(data);
     			}
 		});
@@ -153,12 +149,12 @@
 		//
                 $.ajax({
                         type: "POST",
-                        url: "getmeeting.php",
-                        datatype: "html",
-                        data: 'coursename=MOCKUPSAREFUN4444',
+                        url: 'http://52.62.242.210/bigbluebutton/api/getMeetings?checksum=6bd30d44ac02867583d5f24d93377c4f8ccf024f',
+                        datatype: "xml",
+                        data: '',
                         success: function(data) {
-                        $('#output').append("<br><br>xml..." + data);  
-                        //alert(data);
+                        //$('#output').append("<br><br>xml..." + data);  
+                        alert(data);
                         }
                 });
 		//$.ajax({

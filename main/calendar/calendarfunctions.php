@@ -1,12 +1,12 @@
 <?php 
 
 function draw_calendar($month,$year){
-
+	
 	include 'db.php';
 	$connect = mysqli_connect('localhost', 'php', 'bsharps', 'chamilo');
 	
-	
 	/* draw table */
+	
 	$calendar = '<table cellpadding="0" cellspacing="0" class="calendar">';
 
 	/* table headings */
@@ -49,15 +49,22 @@ function draw_calendar($month,$year){
     			exit();
 			}
 			
-			$query = "Select c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, course.title FROM c_calendar_event INNER JOIN course On course.id = c_calendar_event.c_id AND c_calendar_event.start_date LIKE '%$today%'";
+			// PULL GLOBAL CALENDAR EVENTS 
+			$query = "Select c_calendar_event.id, c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, course.title AS coursetitle, c_calendar_event.session_id FROM c_calendar_event INNER JOIN course On course.id = c_calendar_event.c_id AND c_calendar_event.start_date LIKE '%$today%' AND c_calendar_event.session_id = 0";
 			$result = mysqli_query($connect, $query);
 			$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+			$eventime = substr($row["start_date"], 11);
+			$event = $eventime . '<br/>' . $row["title"];
+			$calendar .= '<div class="event"><a href="./viewevent.php?i=' .$row["id"]. '&t=e">' .$event. '</a></div>';
 			
-			$event = $row["c_id"] . $row["title"];
-			$calendar.= '<div class="event">'.$event.'</div>';
-			
-			// END OF MEL CUSTOM CODE
-			
+			// PULL PERSONAL AGENDA EVENTS
+			$userId = api_get_user_id();
+			$query2 = "SELECT id, user, title, date, enddate FROM personal_agenda WHERE user = '$userId' AND date LIKE '%$today%'";
+			$result2 = mysqli_query($connect, $query2);
+			$row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
+			$eventime2 = substr($row2["date"], 11);
+			$event2 = $eventime2 . '<br/>' . $row2["title"];
+			$calendar .= '<div class = "personalevent"><a href="./viewevent.php?i=' .$row2["id"]. '&t=p">' .$event2. '</a></div>';
 			$calendar.= str_repeat('<p> </p>',2);
 			
 		$calendar.= '</td>';
@@ -88,5 +95,9 @@ function draw_calendar($month,$year){
 	/* all done, return result */
 	return $calendar;
 }
+
+
+
+
 
 ?>

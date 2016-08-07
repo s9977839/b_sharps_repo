@@ -17,11 +17,12 @@ body {
 }
 
 a{
-  color: #666666;
+  color: #333333;
 }
 
 a:hover{
-  color: #62366F;
+  color: #333333;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
@@ -200,6 +201,20 @@ footer a:hover{
     color: #ffffff;
 }
 
+.menu-column .nav li a:hover{
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.social-network-menu .nav li a:hover {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.social-network-menu .nav-pills li.active a {
+    color: #99bfcf;
+}
+
 .panel-body{
     background-color: #f5f5f5;
 }
@@ -307,3 +322,82 @@ li.invitations-social {
 li.invitations-icon {
   display: none;
 }
+
+/* CSS for the calendar */
+table.calendar		{ 
+  border-left:1px solid #999; 
+  width: 100%; 
+}
+
+tr.calendar-row	{ 
+  height: 130px; 
+  vertical-align: top;
+}
+
+td.calendar-day	{  
+  font-size:11px; 
+  position:relative; 
+} 
+* html div.calendar-day { 
+  
+}
+
+td.calendar-day:hover	{ 
+  background:#eceff5; 
+}
+
+td.calendar-day-np	{ 
+  background:#eee; 
+  min-height:200px; 
+} 
+* html div.calendar-day-np { 
+  height:200px; 
+}
+
+td.calendar-day-head { 
+  background:#ccc; 
+  font-weight:bold; 
+  text-align:center; 
+  width:120px; 
+  padding:5px; 
+  border-bottom:1px solid #999; 
+  border-top:1px solid #999; 
+  border-right:1px solid #999; 
+}
+
+div.day-number		{ 
+  background:#999; 
+  padding:5px; 
+  color:#fff; 
+  font-weight:bold; 
+  float:left; 
+  clear:both; 
+  margin:-5px -5px 0 0; 
+  width:20px; 
+  text-align:center; 
+}
+
+/* shared */
+td.calendar-day, td.calendar-day-np { 
+  width:120px; 
+  padding:5px; 
+  border-bottom:1px solid #999; 
+  border-right:1px solid #999; 
+}
+
+.event {
+  color:red; 
+  font-size: 14px; 
+  clear:both; 
+  margin-top:30px; 
+  text-align:center;
+}
+
+.personalevent {
+  clear:both; 
+  color:blue; 
+  font-size: 14px; 
+  margin-top:30px; 
+  text-align:center;
+}
+        
