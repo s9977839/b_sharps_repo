@@ -722,3 +722,21 @@
 [21-Jul-2016 23:42:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:0
 [21-Jul-2016 23:42:50 UTC] PHP   2. bbb->getMeetings() /home/ubuntu/workspace/lms/plugin/bbb/listing.php:110
 [21-Jul-2016 23:42:50 UTC] PHP   3. bbb->getMeetingInfo() /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php:472
+[07-Aug-2016 10:26:26 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Missing parameter.' in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(233): BigBlueButtonBN->_requiredParam(NULL)
+#1 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(249): BigBlueButtonBN->getEndMeetingURL(Array)
+#2 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(751): BigBlueButtonBN->endMeetingWithXmlResponseArray(Array)
+#3 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(502): bbb->endMeeting('28')
+#4 /home/ubuntu/workspace/lms/plugin/bbb/listing.php(110): bbb->getMeetings()
+#5 {main}
+  thrown in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php on line 90
+[07-Aug-2016 10:28:52 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Missing parameter.' in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(233): BigBlueButtonBN->_requiredParam(NULL)
+#1 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(249): BigBlueButtonBN->getEndMeetingURL(Array)
+#2 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(751): BigBlueButtonBN->endMeetingWithXmlResponseArray(Array)
+#3 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(502): bbb->endMeeting('28')
+#4 /home/ubuntu/workspace/lms/plugin/bbb/listing.php(110): bbb->getMeetings()
+#5 {main}
+  thrown in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php on line 90

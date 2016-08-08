@@ -1,0 +1,1 @@
+insert into plugin_bbb_meeting (c_id, meeting_name, attendee_pw, moderator_pw, status, created_at, remote_id  ) values (2, 'TEST2-0', 'TEST2', 'TEST2mod', 1,'2016-08-07 11:18:00', '123456789');

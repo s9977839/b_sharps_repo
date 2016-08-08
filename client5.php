@@ -25,6 +25,55 @@
     return i;
   }
   //
+  // hash function
+  //
+  function makeHash(inputText) {
+	$.ajax({
+		async: false,
+		type: "POST",
+		url: 'hash.php',
+		datatype: 'html',
+		data: inputText,
+		success: function(data) {
+		hash = data;
+		//$('#output').append(hash);
+		}	
+  	});
+	return hash;
+  }
+  //
+  // check for running meeting with matching CODE
+  //
+
+  function meetingInfo(meetingName) {
+	$.ajax({
+		async: false,
+		type: 'POST',
+		url: 'getmeeting.php',
+		datatype: 'html',
+		data: 'coursename=' + meetingName,
+		success: function(data) {
+			isRunning = data;
+		}
+	});
+	return isRunning;
+  }
+  //
+  // create meeting
+  //
+  function createMeeting(meetingData) {
+        $.ajax({
+                async: false,
+                type: 'POST',
+                url: 'startmeeting.php',
+                datatype: 'html',
+                data: meetingData,
+                success: function(data) {
+                  //      isRunning = data;
+                }
+        });
+  }
+  //
   // generate GUID http://guid.us/GUID/JavaScript
   function S4() {
     return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
@@ -52,7 +101,7 @@
 	// grab the current date, convert it to UTC and format it YYYY-MM-DD HH:MM:ss
 	//
 	var date = new Date();
-	var timestamp =  date.getUTCFullYear() + "-" + addZero(incbyone(date.getUTCMonth())) + "-" + addZero(date.getUTCDay()) + " " + addZero(date.getUTCHours()) + ":" + addZero(date.getUTCMinutes()) + ":" + addZero(date.getUTCSeconds());
+	var timestamp =  date.getUTCFullYear() + "-" + addZero(incbyone(date.getUTCMonth())) + "-" + addZero(date.getUTCDate()) + " " + addZero(date.getUTCHours()) + ":" + addZero(date.getUTCMinutes()) + ":" + addZero(date.getUTCSeconds());
 	//
 	// place holder variable for start time in each meeting object
 	//
@@ -60,7 +109,7 @@
 	//
 	//
 	//
-	$('#output').html(timestamp + "<br><br>")
+	$('#output').html(timestamp + "<br><br>");
 	//
 	// loop through the returned json data (data)
 	//
@@ -71,10 +120,16 @@
 			//
 			//$('#output').append("<b>" + key + "</b>: " + value + "   " );
 			//
-			// if key is course code, set var to value
+			// if key is course code, set var to value, generate guid and create basic apicall
 			//
 			if ( key == 'code' ) { 
 				coursetitle = value;
+				guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+                                apicall = "createname=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod"  ;
+				//makeHash=(apicall);
+				checksum=makeHash(apicall);
+				meetingurl = "name=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod" + "&checksum=" + checksum;
+				//$('#output').append(coursetitle + " ######## " + checksum + ' #### ' + meetingurl + "<br><br>");
 			}	
 			//
 			// if key is date assign to tempdate, convert to integer and pull
@@ -91,16 +146,8 @@
 		//
 		$('#output').append("<br>");
 		//
-		// generate meetingID
-		//
-		//guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
-		guid = 123456789
-		//
 		// generate api call string
 		//
-		apicall = "createname=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod04c5360f439c3365ee7d63ea46e4e9df"  ;
-		$('#output').append( apicall + "<br>");
-		//$('#output').append("<br>" + meeturl + coursetitle + "&meetingid=" + guid + "&checksum=1231232312312" + "<br>");
 		var testvalue = "";
 		//
 		//	
@@ -111,7 +158,25 @@
 		// check if current time is greater than calendar entry time
 		//
 		if ( systemdate > chattime ){
-			testvalue = "past";
+                        timediff2 = systemdate - chattime;
+                        //$('#output').append("<br>past.." + systemdate + " " + chattime + " " + timediff2 + " " + coursetitle);
+                        if ( timediff2 < 1000 ) {
+				newtitle = coursetitle;
+                                $('#output').append("<br><b>Lecture has started..." + newtitle + "</b><br>");
+                                                //
+                                                // check running meetings
+                                                //
+                                                //
+						meetingStatus=meetingInfo(newtitle);
+                                                if ( meetingStatus == 1) {
+                                                            	$('#output').append("Meeting already started.. doing nothing");
+                                                        	}
+                                                else {
+                                                    $('#output').append("Meeting " + newtitle + "  hasn't started.. starting..<br><br>");
+						    $('#output').append(meetingurl + "<br><br>");
+						    createMeeting(meetingurl);
+						}
+			}
 		}
 		else if ( systemdate < chattime ) {
 			//
@@ -119,7 +184,7 @@
 			//
 			testvalue = "future";
 			timediff = chattime - systemdate;
-			$('#output').append("<br>Time Difference is " + timediff + "<br><br>");
+			//$('#output').append("<br>Time Difference is " + timediff + "<br><br>");
 			//
 			// if time difference less than 600 seconds, output a warning
 			//
@@ -131,45 +196,6 @@
 		//
 		//
 		//
-		$('#output').append(chattime + " " + testvalue + " "  +  "<br>");
-		//
-		// grab a hash from hash.php return the hash to use as checksum in API call
-		//
-		$.ajax({
-  			type: "POST",
-  			url: 'hash.php',
-  			datatype: "html",
-			data: apicall,
-  			success: function(data) {
-			meetingurl = "create?name=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod" + "&checksum=" + data;
-			$('#output').append("<br><br>Create URL..." + meetingurl);  
-			//$('#output').append("<br><br>debug hash" + data);
-    			//alert(data);
-    			}
-		});
-		//
-		// check running meetings
-		//
-		//
-                $.ajax({
-                        type: "POST",
-                        url: "getmeeting.php",
-                        datatype: "html",
-                        data: 'coursename=MOCKUPSAREFUN4444',
-                        success: function(data) {
-                        $('#output').append("<br><br>xml..." + data);  
-                        //alert(data);
-                        }
-                });
-		//$.ajax({
-			//type: "POST",
-			//url: "http://52.62.242.210/bigbluebutton/api/getMeetings?checksum=6bd30d44ac02867583d5f24d93377c4f8ccf024f",
-			//datatype: "html",
-			//data: '',
-			//success: function(data) {
-			//	$('#output').append("<br><br> " + data);
-			//}
-		//	)};
             });
       } 
     });

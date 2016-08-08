@@ -3,6 +3,7 @@
 // pass meeting name
 //
 $str = $_POST['coursename'];
+//echo $str . " ";
 $meetingstatus = 0;
 //
 // http://www.higherpass.com/php/tutorials/retrieving-xml-with-curl-and-simplexml/

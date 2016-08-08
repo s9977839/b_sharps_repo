@@ -9,7 +9,6 @@
 </head>
 <body>
     <?php 
-    
         $eventid = $_GET['i'];
         $eventtype = $_GET['t'];
         
@@ -48,7 +47,5 @@
 	    $tpl->assign('content', $eventinformation);
         // Loading main Chamilo 1 col template
 	    $tpl->display_one_col_template();
-        
-        
    ?>
 </body>
