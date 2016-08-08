@@ -74,10 +74,41 @@
         });
   }
   //
-  // generate GUID http://guid.us/GUID/JavaScript
-  function S4() {
-    return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+  //update bbb db 
+  //
+  function updateDB(dbData) {
+        $.ajax({
+                async: false,
+                type: 'POST',
+                url: 'updatedb.php',
+                datatype: 'html',
+                data: dbData,
+                success: function(data) {
+                  //      isRunning = data;
+                }
+        });
   }
+  //
+  // random guid
+  //
+  function randomguid() {
+        $.ajax({
+                async: false,
+                type: 'POST',
+                url: 'random.php',
+                datatype: 'html',
+                data:'',
+                success: function(data) {
+                        random = data;
+                }
+        });
+        return random;
+  }
+  //
+  // generate GUID http://guid.us/GUID/JavaScript
+  //function S4() {
+  //  return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+  //}
   //
   // start of ajax stuff
   // setInterval - sets how often ajax refreshes data
@@ -120,16 +151,24 @@
 			//
 			//$('#output').append("<b>" + key + "</b>: " + value + "   " );
 			//
+			if ( key == 'id') {
+				courseid = value;
+			}
 			// if key is course code, set var to value, generate guid and create basic apicall
 			//
 			if ( key == 'code' ) { 
 				coursetitle = value;
-				guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
-                                apicall = "createname=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod"  ;
-				//makeHash=(apicall);
+				//guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
+				//
+				//http://www.w3schools.com/php/func_misc_uniqid.asp
+				// found this used in the bbb plugin
+				//
+                                guid=randomguid();
+                                apicall="createname=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod";
 				checksum=makeHash(apicall);
 				meetingurl = "name=" + coursetitle + "&meetingID=" + guid +  "&attendeePW=" + coursetitle + "&moderatorPW=" + coursetitle + "mod" + "&checksum=" + checksum;
-				//$('#output').append(coursetitle + " ######## " + checksum + ' #### ' + meetingurl + "<br><br>");
+				dburl = "c_id=" + courseid + "&c_title=" + coursetitle + "&g_id=" + guid;
+				//$('#output').append(coursetitle + " ######## " + checksum + ' #### ' + meetingurl + "<br><br>" + dburl );
 			}	
 			//
 			// if key is date assign to tempdate, convert to integer and pull
@@ -175,6 +214,7 @@
                                                     $('#output').append("Meeting " + newtitle + "  hasn't started.. starting..<br><br>");
 						    $('#output').append(meetingurl + "<br><br>");
 						    createMeeting(meetingurl);
+						    updateDB(dburl);
 						}
 			}
 		}
