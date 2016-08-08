@@ -228,8 +228,19 @@
 			//
 			// if time difference less than 600 seconds, output a warning
 			//
-			if ( timediff < 600 ) {
+			if ( timediff < 1000 ) {
+				newtitle = coursetitle;
 				$('#output').append("<br><b>Lecture is starting in less than 10 minutes.<br></b>");	
+                                                meetingStatus=meetingInfo(newtitle);
+                                                if ( meetingStatus == 1) {
+                                                                $('#output').append("Meeting already started.. doing nothing");
+                                                                }
+                                                else {
+                                                    $('#output').append("Meeting " + newtitle + "  hasn't started.. starting..<br><br>");
+                                                    $('#output').append(meetingurl + "<br><br>");
+                                                    createMeeting(meetingurl);
+                                                    updateDB(dburl);
+                                                }
 			}
 	
 		} 
