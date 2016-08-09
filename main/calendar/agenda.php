@@ -153,6 +153,7 @@ if (api_is_allowed_to_edit(false, true) ||
                     $attachmentList,
                     $attachmentCommentList,
                     $comment
+                    
                 );
 
                 if (!empty($values['repeat']) && !empty($eventId)) {

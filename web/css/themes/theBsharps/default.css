@@ -325,7 +325,7 @@ li.invitations-icon {
 
 /* CSS for the calendar */
 table.calendar		{ 
-  border-left:1px solid #999; 
+  border-left:1px solid #ddd; 
   width: 100%; 
 }
 
@@ -337,7 +337,9 @@ tr.calendar-row	{
 td.calendar-day	{  
   font-size:11px; 
   position:relative; 
+  background: #ffffff;
 } 
+
 * html div.calendar-day { 
   
 }
@@ -347,7 +349,7 @@ td.calendar-day:hover	{
 }
 
 td.calendar-day-np	{ 
-  background:#eee; 
+  background:#ddd; 
   min-height:200px; 
 } 
 * html div.calendar-day-np { 
@@ -355,18 +357,18 @@ td.calendar-day-np	{
 }
 
 td.calendar-day-head { 
-  background:#ccc; 
+  background: #ffffff; 
   font-weight:bold; 
   text-align:center; 
   width:120px; 
   padding:5px; 
-  border-bottom:1px solid #999; 
-  border-top:1px solid #999; 
-  border-right:1px solid #999; 
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd; 
 }
 
 div.day-number		{ 
-  background:#999; 
+  background:#9bbfd1; 
   padding:5px; 
   color:#fff; 
   font-weight:bold; 
@@ -381,8 +383,8 @@ div.day-number		{
 td.calendar-day, td.calendar-day-np { 
   width:120px; 
   padding:5px; 
-  border-bottom:1px solid #999; 
-  border-right:1px solid #999; 
+  border-bottom:1px solid #ddd; 
+  border-right:1px solid #ddd; 
 }
 
 .event {

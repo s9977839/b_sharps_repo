@@ -828,3 +828,32 @@ SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in you
 [07-Aug-2016 02:29:50 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/lms/main/calendar/viewevent.php on line 16
 [07-Aug-2016 02:30:02 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/lms/main/calendar/viewevent.php on line 16
 [07-Aug-2016 02:49:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/lms/main/calendar/viewevent.php on line 45
+[09-Aug-2016 10:22:50 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Class 'Sjfasdf' does not exist. ' in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php:571
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php(637): HTML_QuickForm->_loadElement('addElement', 'sjfasdf', Array)
+#1 /home/ubuntu/workspace/lms/main/inc/lib/agenda.lib.php(2095): HTML_QuickForm->addElement('sjfasdf', Array)
+#2 /home/ubuntu/workspace/lms/main/calendar/agenda.php(128): Agenda->getForm(Array)
+#3 {main}
+  thrown in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php on line 571
+[09-Aug-2016 10:52:57 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Class 'Course' does not exist. ' in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php:571
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php(637): HTML_QuickForm->_loadElement('addElement', 'course', Array)
+#1 /home/ubuntu/workspace/lms/main/inc/lib/agenda.lib.php(2097): HTML_QuickForm->addElement('course', Object(HTML_QuickForm_select))
+#2 /home/ubuntu/workspace/lms/main/calendar/agenda.php(128): Agenda->getForm(Array)
+#3 {main}
+  thrown in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php on line 571
+[09-Aug-2016 10:53:06 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Class 'Course' does not exist. ' in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php:571
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php(637): HTML_QuickForm->_loadElement('addElement', 'course', Array)
+#1 /home/ubuntu/workspace/lms/main/inc/lib/agenda.lib.php(2097): HTML_QuickForm->addElement('course', Object(HTML_QuickForm_select))
+#2 /home/ubuntu/workspace/lms/main/calendar/agenda.php(128): Agenda->getForm(Array)
+#3 {main}
+  thrown in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php on line 571
+[09-Aug-2016 10:53:11 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Class 'Course' does not exist. ' in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php:571
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php(637): HTML_QuickForm->_loadElement('addElement', 'course', Array)
+#1 /home/ubuntu/workspace/lms/main/inc/lib/agenda.lib.php(2097): HTML_QuickForm->addElement('course', Object(HTML_QuickForm_select))
+#2 /home/ubuntu/workspace/lms/main/calendar/agenda.php(128): Agenda->getForm(Array)
+#3 {main}
+  thrown in /home/ubuntu/workspace/lms/main/inc/lib/pear/HTML/QuickForm.php on line 571
+[09-Aug-2016 10:58:01 UTC] PHP Parse error:  syntax error, unexpected '$select' (T_VARIABLE) in /home/ubuntu/workspace/lms/main/calendar/agenda.php on line 156

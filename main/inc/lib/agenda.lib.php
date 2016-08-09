@@ -158,7 +158,8 @@ class Agenda
                     'date' => $start,
                     'enddate' => $end,
                     'all_day' => $allDay,
-                    'color' => $color
+                    'color' => $color,
+                    'course' => $select
                 );
 
                 $id = Database::insert(
@@ -2090,6 +2091,11 @@ class Agenda
         }
 
         $form->addDateRangePicker('date_range', get_lang('StartDate'), false, array('id' => 'date_range'));
+        
+        $course = array("Dev"=>"Development", "Unit"=>"UNITS");
+        $select = new HTML_QuickForm_select ('course', 'Course:', $course);
+        $form->addElement($select);
+        
         $form->addElement('checkbox', 'all_day', null, get_lang('AllDay'));
 
         if ($this->type == 'course') {
