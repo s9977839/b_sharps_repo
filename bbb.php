@@ -3,20 +3,21 @@
     <script language="javascript" type="text/javascript" src="jquery.js"></script>
   </head>
   <body>
-  <h2> Calendar DB output example </h2>
-  <h3>Output: </h3>
+  <h2> Bigbluebutton Integration Demo </h2>
   <div id="output">this element will be accessed by jquery and this text replaced</div>
   <script id="source" language="javascript" type="text/javascript">
 
  //
- // pass an int, increment by 1 and return value
+ // pass an int, increment by 1 and return value, used to fix java month date (0-11 rather than 1 - 12)
+ // http://tutorials.jenkov.com/java-date-time/java-util-calendar.html#month-trap
  //
  function incbyone(i) {
     i = i + 1;
     return i;
  } 
  // 
- // if number less than 10, prepend 0
+ // if number less than 10, prepend 0, chamilo displays numbers in the calendar less than 10 with a leading zero.
+ // to compare dates, format needs to be the same
  //
  function addZero(i) {
     if (i < 10) {
@@ -25,7 +26,7 @@
     return i;
   }
   //
-  // hash function
+  // hash function, takes a url string, returns a SHAsum to be used as checksum when calling BBB apis.
   //
   function makeHash(inputText) {
 	$.ajax({
@@ -42,7 +43,7 @@
 	return hash;
   }
   //
-  // check for running meeting with matching CODE
+  // check for running meeting with matching CODE API call to bbb
   //
 
   function meetingInfo(meetingName) {
@@ -74,7 +75,7 @@
         });
   }
   //
-  //update bbb db 
+  //update bbb table 
   //
   function updateDB(dbData) {
         $.ajax({
@@ -89,7 +90,9 @@
         });
   }
   //
-  // random guid
+  // random guid generator
+  //http://www.w3schools.com/php/func_misc_uniqid.asp
+  // found this used in the bbb plugin
   //
   function randomguid() {
         $.ajax({
@@ -105,10 +108,6 @@
         return random;
   }
   //
-  // generate GUID http://guid.us/GUID/JavaScript
-  //function S4() {
-  //  return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
-  //}
   //
   // start of ajax stuff
   // setInterval - sets how often ajax refreshes data
@@ -116,8 +115,8 @@
   $(setInterval(function () 
   {
     //
-    // make call to api3.php and expect json data return.
-    // api3.php returns a json dump of a calendar database
+    // make call to getcal.php and expect json data return.
+    // getcal.php returns a json dump of a calendar database
     //
     $.ajax({                                      
       url: 'getcal.php',                 
@@ -140,7 +139,7 @@
 	//
 	//
 	//
-	$('#output').html(timestamp + "<br><br>");
+	$('#output').html(date + "<br><br>");
 	//
 	// loop through the returned json data (data)
 	//
@@ -158,7 +157,6 @@
 			//
 			if ( key == 'code' ) { 
 				coursetitle = value;
-				//guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
 				//
 				//http://www.w3schools.com/php/func_misc_uniqid.asp
 				// found this used in the bbb plugin
@@ -185,11 +183,10 @@
 		//
 		$('#output').append("<br>");
 		//
-		// generate api call string
 		//
 		var testvalue = "";
 		//
-		//	
+		// convert system date to number
 		//
 		tempdate2 = timestamp.replace(/\D/g,'');
 		systemdate = parseInt(tempdate2);

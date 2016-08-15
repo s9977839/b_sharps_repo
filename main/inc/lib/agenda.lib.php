@@ -140,7 +140,8 @@ class Agenda
         $attachmentArray = array(),
         $attachmentCommentList = array(),
         $eventComment = null,
-        $color = ''
+        $color = '',
+        $course
     ) {
         $start = api_get_utc_datetime($start);
         $end = api_get_utc_datetime($end);
@@ -155,11 +156,12 @@ class Agenda
                     'user' => api_get_user_id(),
                     'title' => $title,
                     'text' => $content,
+                    'course' => $course,
                     'date' => $start,
                     'enddate' => $end,
                     'all_day' => $allDay,
-                    'color' => $color,
-                    'course' => $select
+                    'color' => $color
+                    
                 );
 
                 $id = Database::insert(
@@ -580,7 +582,8 @@ class Agenda
         $attachmentCommentList = array(),
         $comment = null,
         $color = '',
-        $addAnnouncement = false
+        $addAnnouncement = false,
+        $course
     ) {
         $start = api_get_utc_datetime($start);
         $end = api_get_utc_datetime($end);
@@ -597,6 +600,7 @@ class Agenda
                 $attributes = array(
                     'title' => $title,
                     'text' => $content,
+                    'course' => $course,
                     'date' => $start,
                     'enddate' => $end,
                     'all_day' => $allDay,
@@ -2092,9 +2096,10 @@ class Agenda
 
         $form->addDateRangePicker('date_range', get_lang('StartDate'), false, array('id' => 'date_range'));
         
-        $course = array("Dev"=>"Development", "Unit"=>"UNITS");
-        $select = new HTML_QuickForm_select ('course', 'Course:', $course);
-        $form->addElement($select);
+        $select = array("Dev"=>"Development", "Unit"=>"UNITS");
+        $course = new HTML_QuickForm_select ('course', 'Course:', $select);
+        $form->addElement($course);
+
         
         $form->addElement('checkbox', 'all_day', null, get_lang('AllDay'));
 

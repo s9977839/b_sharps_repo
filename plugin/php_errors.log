@@ -740,3 +740,27 @@ Stack trace:
 #4 /home/ubuntu/workspace/lms/plugin/bbb/listing.php(110): bbb->getMeetings()
 #5 {main}
   thrown in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php on line 90
+[10-Aug-2016 09:55:43 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Missing parameter.' in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(233): BigBlueButtonBN->_requiredParam(NULL)
+#1 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(249): BigBlueButtonBN->getEndMeetingURL(Array)
+#2 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(751): BigBlueButtonBN->endMeetingWithXmlResponseArray(Array)
+#3 /home/ubuntu/workspace/lms/plugin/bbb/listing.php(74): bbb->endMeeting('63')
+#4 {main}
+  thrown in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php on line 90
+[10-Aug-2016 09:55:46 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Missing parameter.' in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(233): BigBlueButtonBN->_requiredParam(NULL)
+#1 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(249): BigBlueButtonBN->getEndMeetingURL(Array)
+#2 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(751): BigBlueButtonBN->endMeetingWithXmlResponseArray(Array)
+#3 /home/ubuntu/workspace/lms/plugin/bbb/listing.php(74): bbb->endMeeting('63')
+#4 {main}
+  thrown in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php on line 90
+[10-Aug-2016 09:55:51 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Missing parameter.' in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php:90
+Stack trace:
+#0 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(233): BigBlueButtonBN->_requiredParam(NULL)
+#1 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php(249): BigBlueButtonBN->getEndMeetingURL(Array)
+#2 /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb.lib.php(751): BigBlueButtonBN->endMeetingWithXmlResponseArray(Array)
+#3 /home/ubuntu/workspace/lms/plugin/bbb/listing.php(74): bbb->endMeeting('55')
+#4 {main}
+  thrown in /home/ubuntu/workspace/lms/plugin/bbb/lib/bbb_api.php on line 90

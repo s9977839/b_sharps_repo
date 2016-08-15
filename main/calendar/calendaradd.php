@@ -1,5 +1,9 @@
 <?php
 /* For licensing terms, see /license.txt */
+/* ******************************************************************************/
+/* THIS IS A DUPLICATION OF ORIGINAL AGENDA.PHP FILE WITH THE REDIRECTS UPDATED */
+/* ******************************************************************************/
+
 
 /**
  * @package chamilo.calendar
@@ -21,16 +25,7 @@ $action = isset($_GET['action']) ? $_GET['action'] : null;
 $origin = isset($_GET['origin']) ? $_GET['origin'] : null;
 
 $this_section = SECTION_COURSES;
-$url = null;
-if (empty($action)) {
-    if (!empty($course_info)) {
-        $url = api_get_path(WEB_CODE_PATH).'calendar/agenda_js.php?type=course'.'&'.api_get_cidreq();
-    } else {
-        $url = api_get_path(WEB_CODE_PATH).'calendar/agenda_js.php?';
-    }
-    header("Location: $url");
-    exit;
-}
+$url = api_get_path(WEB_CODE_PATH).'calendar/agenda_js.php?';
 
 /* 	Resource linker */
 $_SESSION['source_type'] = 'Agenda';
@@ -93,7 +88,7 @@ Event::event_access_tool(TOOL_CALENDAR_EVENT);
 $is_allowed_to_edit = api_is_allowed_to_edit(false, true) || (api_get_course_setting('allow_user_edit_agenda') && !api_is_anonymous());
 $agenda = new Agenda();
 $agenda->type = $type;
-$actions = $agenda->displayActions('calendar');
+/*$actions = $agenda->displayActions('calendar');*/
 
 if ($type == 'fromjs') {
     $id_list = explode('_', $eventId);

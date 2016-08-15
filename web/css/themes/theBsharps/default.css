@@ -324,9 +324,15 @@ li.invitations-icon {
 }
 
 /* CSS for the calendar */
-table.calendar		{ 
-  border-left:1px solid #ddd; 
+.calendar   { 
+  position: relative;
   width: 100%; 
+  border:1px solid #333333;
+  margin: 0 auto;
+}
+
+table.calendar {
+    border-collapse: collapse;
 }
 
 tr.calendar-row	{ 
@@ -340,59 +346,63 @@ td.calendar-day	{
   background: #ffffff;
 } 
 
-* html div.calendar-day { 
-  
-}
-
 td.calendar-day:hover	{ 
   background:#eceff5; 
 }
 
 td.calendar-day-np	{ 
-  background:#ddd; 
+  background:#333333; 
   min-height:200px; 
+
 } 
+
 * html div.calendar-day-np { 
   height:200px; 
 }
 
 td.calendar-day-head { 
-  background: #ffffff; 
+  background: #9bbfd1; 
   font-weight:bold; 
   text-align:center; 
   width:120px; 
   padding:5px; 
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd; 
+  border: 1px solid #333333;
+  text-decoration: underline;
 }
 
 div.day-number		{ 
   background:#9bbfd1; 
-  padding:5px; 
-  color:#fff; 
-  font-weight:bold; 
-  float:left; 
+  font-weight:bold;
   clear:both; 
-  margin:-5px -5px 0 0; 
-  width:20px; 
+  width:150px; 
   text-align:center; 
+  color: #333333;
 }
 
 /* shared */
 td.calendar-day, td.calendar-day-np { 
   width:120px; 
   padding:5px; 
-  border-bottom:1px solid #ddd; 
-  border-right:1px solid #ddd; 
+  border-bottom:1px solid #333333; 
+  border-right:1px solid #333333; 
 }
 
 .event {
-  color:red; 
+  color:red;
   font-size: 14px; 
   clear:both; 
   margin-top:30px; 
   text-align:center;
+}
+
+.event a {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.personalevent a {
+    background-color: #fcf8e3;
+    font-weight: bold;
 }
 
 .personalevent {
@@ -402,4 +412,67 @@ td.calendar-day, td.calendar-day-np {
   margin-top:30px; 
   text-align:center;
 }
+
+select#month {
+  font-weight: bold;
+  background-color: #ffffff;
+  margin: 5px;
+  font-size: 21px;
+  float: left;
+}
+
+select#year {
+  font-weight: bold;
+  background-color: #ffffff;
+  margin: 5px;
+  font-size: 21px;
+  float: left;
+}
+
+input[type="submit"] {
+  background-color: #ddd;
+  margin: 5px;
+  float: left;
+}
+
+/* CSS for the event description */
+table.eventdescription {
+    border: 1px solid #333333;
+    border-collapse: collapse;
+}
+
+form  {
+  text-align: right;
+}
+
+a.forward-control {
+    padding: 0px 10px;
+}
+
+table.eventdescription tbody tr:nth-child(odd) {
+    background: #99bfcf;
+    font-weight: bold;
+}
+
+table.eventdescription tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+/* CSS for the events list */
+
+table.eventlist {
+    border: 1px solid #333333;
+}
+
+.eventlist th {
+    text-align: left;
+    vertical-align: top;
+    text-decoration: underline;
+}
+
+table.eventlist tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+
         
