@@ -141,7 +141,8 @@ class Agenda
         $attachmentCommentList = array(),
         $eventComment = null,
         $color = '',
-        $course
+        $course,
+        $videoconference
     ) {
         $start = api_get_utc_datetime($start);
         $end = api_get_utc_datetime($end);
@@ -160,7 +161,8 @@ class Agenda
                     'date' => $start,
                     'enddate' => $end,
                     'all_day' => $allDay,
-                    'color' => $color
+                    'color' => $color,
+                    'videoconference' => $videoconference
                     
                 );
 
@@ -179,7 +181,8 @@ class Agenda
                     'session_id' => $this->getSessionId(),
                     'c_id' => $this->course['real_id'],
                     'comment' => $eventComment,
-                    'color' => $color
+                    'color' => $color,
+                    'videoconference' => $videoconference
                 );
 
                 if (!empty($parentEventId)) {
@@ -583,7 +586,8 @@ class Agenda
         $comment = null,
         $color = '',
         $addAnnouncement = false,
-        $course
+        $course,
+        $videoconference
     ) {
         $start = api_get_utc_datetime($start);
         $end = api_get_utc_datetime($end);
@@ -604,7 +608,8 @@ class Agenda
                     'date' => $start,
                     'enddate' => $end,
                     'all_day' => $allDay,
-                    'color' => $color
+                    'color' => $color,
+                    'videoconference' => $videoconference
                 );
                 Database::update(
                     $this->tbl_personal_agenda,
@@ -635,7 +640,8 @@ class Agenda
                         'end_date' => $end,
                         'all_day' => $allDay,
                         'comment' => $comment,
-                        'color' => $color
+                        'color' => $color,
+                        'videoconference' => $videoconference
                     );
 
                     Database::update(
@@ -2096,9 +2102,20 @@ class Agenda
 
         $form->addDateRangePicker('date_range', get_lang('StartDate'), false, array('id' => 'date_range'));
         
-        $select = array("Dev"=>"Development", "Unit"=>"UNITS");
+        $connect = mysqli_connect('localhost', 'php', 'bsharps', 'chamilo');
+        $userId = api_get_user_id();
+        $select = array();
+        $query = "Select course_rel_user.user_id, course.id, course_rel_user.c_id, course_rel_user.status, course.id, course.title FROM course_rel_user INNER JOIN course ON course.id = course_rel_user.c_id WHERE course_rel_user.user_id ='$userId'";
+        if ($result = mysqli_query($connect, $query)){
+            while ($row = mysqli_fetch_assoc($result)){
+                $select[$row["title"]] = $row["title"];
+            }
+        }
         $course = new HTML_QuickForm_select ('course', 'Course:', $select);
         $form->addElement($course);
+        $select2 = array("y" => "Yes", "n" => "No");
+        $video = new HTML_QuickForm_select ('videoconference', 'VideoConference:', $select2);
+        $form->addElement($video);
 
         
         $form->addElement('checkbox', 'all_day', null, get_lang('AllDay'));

@@ -141,6 +141,7 @@ if (api_is_allowed_to_edit(false, true) ||
                 $startDate = $values['date_range_start'];
                 $endDate = $values['date_range_end'];
                 $course = $values['course'];
+                $videoconference = $values['videoconference'];
 
                 $eventId = $agenda->addEvent(
                     $startDate,
@@ -155,7 +156,8 @@ if (api_is_allowed_to_edit(false, true) ||
                     $attachmentCommentList,
                     $comment,
                     $color,
-                    $course
+                    $course,
+                    $videoconference
                     
                 );
 
@@ -201,6 +203,7 @@ if (api_is_allowed_to_edit(false, true) ||
                 $startDate = $values['date_range_start'];
                 $endDate = $values['date_range_end'];
                 $course = $values['course'];
+                $videoconference = $values['videoconference'];
 
                 $sendAttachment = isset($_FILES) && !empty($_FILES) ? true : false;
                 $attachmentList = $sendAttachment ? $_FILES : null;
@@ -225,7 +228,8 @@ if (api_is_allowed_to_edit(false, true) ||
                         $attachmentList,
                         $attachmentCommentList,
                         $comment,
-                        $course
+                        $course,
+                        $videoconference
                     );
 
                     $message = Display::return_message(get_lang('Updated'), 'confirmation');
@@ -248,7 +252,8 @@ if (api_is_allowed_to_edit(false, true) ||
                     $comment,
                     '',
                     $sendEmail,
-                    $course
+                    $course,
+                    $videoconference
                 );
 
                 if (!empty($values['repeat']) && !empty($eventId)) {

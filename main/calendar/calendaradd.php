@@ -1,9 +1,5 @@
 <?php
 /* For licensing terms, see /license.txt */
-/* ******************************************************************************/
-/* THIS IS A DUPLICATION OF ORIGINAL AGENDA.PHP FILE WITH THE REDIRECTS UPDATED */
-/* ******************************************************************************/
-
 
 /**
  * @package chamilo.calendar
@@ -25,7 +21,16 @@ $action = isset($_GET['action']) ? $_GET['action'] : null;
 $origin = isset($_GET['origin']) ? $_GET['origin'] : null;
 
 $this_section = SECTION_COURSES;
-$url = api_get_path(WEB_CODE_PATH).'calendar/agenda_js.php?';
+$url = null;
+if (empty($action)) {
+    if (!empty($course_info)) {
+        $url = api_get_path(WEB_CODE_PATH).'calendar/agenda_js.php?type=course'.'&'.api_get_cidreq();
+    } else {
+        $url = api_get_path(WEB_CODE_PATH).'calendar/agenda_js.php?';
+    }
+    header("Location: $url");
+    exit;
+}
 
 /* 	Resource linker */
 $_SESSION['source_type'] = 'Agenda';
@@ -136,6 +141,7 @@ if (api_is_allowed_to_edit(false, true) ||
                 $startDate = $values['date_range_start'];
                 $endDate = $values['date_range_end'];
                 $course = $values['course'];
+                $videoconference = $values['videoconference'];
 
                 $eventId = $agenda->addEvent(
                     $startDate,
@@ -150,7 +156,8 @@ if (api_is_allowed_to_edit(false, true) ||
                     $attachmentCommentList,
                     $comment,
                     $color,
-                    $course
+                    $course,
+                    $videoconference
                     
                 );
 
@@ -196,6 +203,7 @@ if (api_is_allowed_to_edit(false, true) ||
                 $startDate = $values['date_range_start'];
                 $endDate = $values['date_range_end'];
                 $course = $values['course'];
+                $videoconference = $values['videoconference'];
 
                 $sendAttachment = isset($_FILES) && !empty($_FILES) ? true : false;
                 $attachmentList = $sendAttachment ? $_FILES : null;
@@ -220,7 +228,8 @@ if (api_is_allowed_to_edit(false, true) ||
                         $attachmentList,
                         $attachmentCommentList,
                         $comment,
-                        $course
+                        $course,
+                        $videoconference
                     );
 
                     $message = Display::return_message(get_lang('Updated'), 'confirmation');
@@ -243,7 +252,8 @@ if (api_is_allowed_to_edit(false, true) ||
                     $comment,
                     '',
                     $sendEmail,
-                    $course
+                    $course,
+                    $videoconference
                 );
 
                 if (!empty($values['repeat']) && !empty($eventId)) {

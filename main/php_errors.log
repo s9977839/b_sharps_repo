@@ -2000,3 +2000,210 @@ Stack trace:
 [15-Aug-2016 09:30:47 UTC] PHP Fatal error:  Call to a member function displayActions() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendar.php on line 44
 [15-Aug-2016 09:30:47 UTC] PHP Stack trace:
 [15-Aug-2016 09:30:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/calendar.php:0
+[15-Aug-2016 11:08:15 UTC] /home/ubuntu/workspace/lms/main/inc/lib/api.lib.php:5161: Attempting to update setting submit () which does not exist at all
+[15-Aug-2016 11:31:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'c_id' cannot be null' in /home/ubuntu/workspace/lms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:91
+Stack trace:
+#0 /home/ubuntu/workspace/lms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(91): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(165): Doctrine\DBAL\Driver\PDOStatement->execute(Array)
+#2 /home/ubuntu/workspace/lms/main/inc/lib/database.lib.php(399): Doctrine\DBAL\Statement->execute(Array)
+#3 /home/ubuntu/workspace/lms/main/inc/lib/agenda.lib.php(193): Database::insert('c_calendar_even...', Array)
+#4 /home/ubuntu/workspace/lms/main/calendar/calendaradd.php(155): Agenda->addEvent('2016-08-16 09:0...', '2016-08-16 10:0...', 'false', 'bbbb', '<p>This is my c...', Array, false, NULL, Array, Array, 'asdfasdfasdfasd...', NULL, 'Dev')
+#5 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with in /home/ubuntu/workspace/lms/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 112
+[16-Aug-2016 10:41:22 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 83
+[16-Aug-2016 10:41:22 UTC] PHP Stack trace:
+[16-Aug-2016 10:41:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[16-Aug-2016 10:46:53 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 69
+[16-Aug-2016 10:46:53 UTC] PHP Stack trace:
+[16-Aug-2016 10:46:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 04:35:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'xapian.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lms/main/inc/lib/search/xapian/XapianIndexer.class.php on line 8
+[17-Aug-2016 04:35:57 UTC] PHP Stack trace:
+[17-Aug-2016 04:35:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/document/upload.php:0
+[17-Aug-2016 04:35:57 UTC] PHP   2. DocumentManager::upload_document() /home/ubuntu/workspace/lms/main/document/upload.php:197
+[17-Aug-2016 04:35:57 UTC] PHP   3. DocumentManager::index_document() /home/ubuntu/workspace/lms/main/inc/lib/document.lib.php:2908
+[17-Aug-2016 04:35:57 UTC] PHP   4. require_once() /home/ubuntu/workspace/lms/main/inc/lib/document.lib.php:3937
+[17-Aug-2016 04:35:57 UTC] PHP   5. include_once() /home/ubuntu/workspace/lms/main/inc/lib/search/ChamiloIndexer.class.php:11
+[17-Aug-2016 04:54:43 UTC] PHP Fatal error:  Call to undefined function newDateTimeZone() in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 85
+[17-Aug-2016 04:54:43 UTC] PHP Stack trace:
+[17-Aug-2016 04:54:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 04:54:43 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:49
+[17-Aug-2016 05:06:15 UTC] PHP Fatal error:  Call to undefined function newDateTime() in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:06:15 UTC] PHP Stack trace:
+[17-Aug-2016 05:06:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:06:15 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:49
+[17-Aug-2016 05:08:16 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($row2["date"]) at position 0 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('$row2["date"]', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:08:19 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($row2["date"]) at position 0 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('$row2["date"]', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:08:36 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:08:36 UTC] PHP Stack trace:
+[17-Aug-2016 05:08:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:08:38 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:08:38 UTC] PHP Stack trace:
+[17-Aug-2016 05:08:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:08:49 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (.$row2["date"].) at position 1 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('.$row2["date"].', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:08:51 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (.$row2["date"].) at position 1 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('.$row2["date"].', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:10:20 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($row2["date"]) at position 0 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('$row2["date"]', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:10:24 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($row2["date"]) at position 0 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('$row2["date"]', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:10:39 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:10:39 UTC] PHP Stack trace:
+[17-Aug-2016 05:10:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:10:47 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (.$row2["date"].) at position 1 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('.$row2["date"].', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:12:53 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (.$row2["date"].) at position 1 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('.$row2["date"].', Object(DateTimeZone))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:14:16 UTC] PHP Fatal error:  Call to a member function setTimeZone() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:14:16 UTC] PHP Stack trace:
+[17-Aug-2016 05:14:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:14:16 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:49
+[17-Aug-2016 05:14:19 UTC] PHP Fatal error:  Call to a member function setTimeZone() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:14:19 UTC] PHP Stack trace:
+[17-Aug-2016 05:14:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:14:19 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:49
+[17-Aug-2016 05:15:00 UTC] PHP Fatal error:  Call to a member function setTimeZone() on a non-object in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:15:00 UTC] PHP Stack trace:
+[17-Aug-2016 05:15:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:15:00 UTC] PHP   2. draw_calendar() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:49
+[17-Aug-2016 05:23:14 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct() expects parameter 2 to be DateTimeZone, object given' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:83
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(83): DateTime->__construct('2016-08-16 06:0...', Object(DateTime))
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 83
+[17-Aug-2016 05:28:18 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (.$row2["date"].) at position 1 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('.$row2["date"].')
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:29:23 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($row2["date"]) at position 0 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('$row2["date"]')
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:29:24 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($row2["date"]) at position 0 ($): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:82
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(82): DateTime->__construct('$row2["date"]')
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:31:17 UTC] PHP Parse error:  syntax error, unexpected '' . $row2["date"] . '' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 82
+[17-Aug-2016 05:31:17 UTC] PHP Stack trace:
+[17-Aug-2016 05:31:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/agenda_js.php:0
+[17-Aug-2016 05:32:05 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (;
+				$date1 .= $row2["title];
+				$date1 .= ) at position 0 (;): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:85
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(85): DateTime->__construct(';?????$date1 .=...')
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 85
+[17-Aug-2016 05:32:07 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (;
+				$date1 .= $row2["title];
+				$date1 .= ) at position 0 (;): Unexpected character' in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php:85
+Stack trace:
+#0 /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php(85): DateTime->__construct(';?????$date1 .=...')
+#1 /home/ubuntu/workspace/lms/main/calendar/agenda_js.php(49): draw_calendar(8, 2016)
+#2 {main}
+  thrown in /home/ubuntu/workspace/lms/main/calendar/calendarfunctions.php on line 85
+[17-Aug-2016 09:32:48 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/lms/main/calendar/viewevent.php on line 16
+[17-Aug-2016 09:33:08 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/lms/main/calendar/viewevent.php on line 16
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string(): Entity: line 6: parser error : Opening and ending tag mismatch: hr line 5 and body in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string(): </body> in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string():        ^ in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string(): Entity: line 7: parser error : Opening and ending tag mismatch: body line 3 and html in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string(): </html> in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string():        ^ in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Warning:  simplexml_load_string(): Entity: line 8: parser error : Premature end of data in tag html line 1 in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 19
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:26 UTC] PHP   2. simplexml_load_string() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:19
+[17-Aug-2016 10:12:26 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:12:26 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:12:31 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:12:31 UTC] PHP Stack trace:
+[17-Aug-2016 10:12:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:14:42 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:14:42 UTC] PHP Stack trace:
+[17-Aug-2016 10:14:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:16:04 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:16:04 UTC] PHP Stack trace:
+[17-Aug-2016 10:16:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:17:06 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:17:06 UTC] PHP Stack trace:
+[17-Aug-2016 10:17:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:21:21 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:21:21 UTC] PHP Stack trace:
+[17-Aug-2016 10:21:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:22:15 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:22:15 UTC] PHP Stack trace:
+[17-Aug-2016 10:22:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:22:25 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:22:25 UTC] PHP Stack trace:
+[17-Aug-2016 10:22:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:22:33 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:22:33 UTC] PHP Stack trace:
+[17-Aug-2016 10:22:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:27:02 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:27:02 UTC] PHP Stack trace:
+[17-Aug-2016 10:27:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0
+[17-Aug-2016 10:29:03 UTC] PHP Fatal error:  Call to a member function children() on a non-object in /home/ubuntu/workspace/lms/main/calendar/getmeeting.php on line 24
+[17-Aug-2016 10:29:03 UTC] PHP Stack trace:
+[17-Aug-2016 10:29:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/lms/main/calendar/getmeeting.php:0

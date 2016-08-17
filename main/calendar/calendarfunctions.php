@@ -2,12 +2,10 @@
 
 function draw_calendar_menu () {
 	$menu = '<div class="calendarmenu">';
-	$menu .= '<span class="calendarviewbutton"><a href="./agenda_js.php">Calendar View</a></span><span class = "listviewbutton"><a href="./eventlist.php">List View</a></span>';
-	$menu .= '<span class="addeventbutton"><a href="./calendaradd.php?&gradebook=0&origin=&action=add&type=personal"> Add Event</a> </span>';
+	$menu .= '<span class="calendarviewbutton"><a href="./agenda_js.php"><img src="https://bits-bsharp-melbnetworks.c9users.io/main/img/icons/32/calendar.png" alt="Calendar View" title="Calendar View"></a></span><span class = "listviewbutton"><a href="./eventlist.php"><img src="https://bits-bsharp-melbnetworks.c9users.io/main/img/icons/32/listview.png" alt="List View" title="List View"></a></span>';
+	$menu .= '<span class="addeventbutton"><a href="./calendaradd.php?&gradebook=0&origin=&action=add&type=personal"><img src="https://bits-bsharp-melbnetworks.c9users.io/main/img/icons/32/addevent.png" alt="Add Event" title="Add Event"></a> </span>';
 	$menu .= '</div>';
 	return $menu;
-	
-	
 }
 
 function draw_calendar($month,$year){
@@ -66,21 +64,29 @@ function draw_calendar($month,$year){
 			
 			// PULL GLOBAL CALENDAR EVENTS 
 			$query = "Select c_calendar_event.id, c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, course.title AS coursetitle, c_calendar_event.session_id FROM c_calendar_event INNER JOIN course On course.id = c_calendar_event.c_id AND c_calendar_event.start_date LIKE '%$today%' AND c_calendar_event.session_id = 0";
-			$result = mysqli_query($connect, $query);
-			$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-			$eventime = substr($row["start_date"], 11);
-			$event = $eventime . '<br/>' . $row["title"];
-			$calendar .= '<div class="event"><a href="./viewevent.php?i=' .$row["id"]. '&t=e">' .$event. '</a></div>';
+			if ($result = mysqli_query($connect, $query)) {
+				while ($row = mysqli_fetch_assoc($result)) {
+					$eventime = substr($row["start_date"], 11);
+					$event = $eventime . '<br/>' . $row["title"];
+					$calendar .= '<div class="event"><a href="./viewevent.php?i=' .$row["id"]. '&t=e">' .$event. '</a></div>';
+				}
+			}
 			
 			// PULL PERSONAL AGENDA EVENTS
 			$userId = api_get_user_id();
 			$query2 = "SELECT id, user, title, date, enddate FROM personal_agenda WHERE user = '$userId' AND date LIKE '%$today%'";
-			$result2 = mysqli_query($connect, $query2);
-			$row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
-			$eventime2 = substr($row2["date"], 11);
-			$event2 = $eventime2 . '<br/>' . $row2["title"];
-			$calendar .= '<div class = "personalevent"><a href="./viewevent.php?i=' .$row2["id"]. '&t=p">' .$event2. '</a></div>';
-			$calendar.= str_repeat('<p> </p>',2);
+			if ($result2 = mysqli_query($connect, $query2)) {
+				while ($row2 = mysqli_fetch_assoc($result2))
+				{
+				
+			/*	$date = new DateTime($row2["date"]);
+				$date->setTimeZone(new DateTimeZone('Australia/Brisbane'));*/
+				
+				$event2 = $row2["date"] . '<br/>' . $row2["title"] ;
+				$calendar .= '<div class = "personalevent"><a href="./viewevent.php?i=' .$row2["id"]. '&t=p">' .$event2. '</a></div>';
+				$calendar .= str_repeat('<p> </p>',2);	
+				}
+			}
 			
 		$calendar.= '</td>';
 		if($running_day == 6):
@@ -122,6 +128,8 @@ function draw_list($month,$year){
 	$calendar .= '<th class = "listevent"> Event </th>';
 	$calendar .= '<th class = "listconference"> Video Conference </th>';
 	$calendar .= '<th class = "listcourse"> Course </th>';
+	$calendar .= '<th>View Event</th>';
+	$calendar .= '<th>Edit Event</th>';
 	$calendar .= '</tr>';
 
 	$running_day = date('w',mktime(0,0,0,$month,1,$year));
@@ -151,47 +159,51 @@ function draw_list($month,$year){
 			
 			// PULL GLOBAL CALENDAR EVENTS 
 			$query = "Select c_calendar_event.id, c_calendar_event.c_id, c_calendar_event.title, c_calendar_event.start_date, c_calendar_event.end_date, c_calendar_event.videoconference, course.title AS coursetitle, c_calendar_event.session_id FROM c_calendar_event INNER JOIN course On course.id = c_calendar_event.c_id AND c_calendar_event.start_date LIKE '%$today%' AND c_calendar_event.session_id = 0";
-			$result = mysqli_query($connect, $query);
-			$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-			if (!empty($row))
-			{
+			if ($result = mysqli_query($connect, $query)) {
+				while ($row = mysqli_fetch_assoc($result))
+				{
 				$calendar.= '<tr>';
-				$eventime = substr($row["start_date"], 11);
 				$calendar .= '<td>' .$row["start_date"]. '</td>';
 				$calendar .= '<td>' .$row["title"]. '</td>';
-				if ($row["videoconference"] == "Y") {
-					/* https://thenounproject.com/term/video-camera/1998/ */
-					$calendar .= '<td><img src="../img/video.png"></td>';
-				}
+				if ($row["videoconference"] == "y"){
+					$calendar .= '<td><img src="../img/video.png"></td>';}
 				else {
-					$calendar .= '<td>' .$row["videoconference"]. '</td>';	
+					$calendar.= '<td></td>';
 				}
-				$calendar .= '<td>' .$row["coursetitle"];
+				$calendar .= '<td>' .$row["coursetitle"].'</td>';
 			    $calendar .= '<td> <div class="listevent"><a href="./viewevent.php?i=' .$row["id"]. '&t=e">View Event</a></div></td>';
-				$calendar .= '</td></tr>';
-				
+				$calendar .= '<td> <div class="editevent"><a href="./calendaradd.php?action=edit&type=fromjs&id=course_'.$row["id"].'&course_id=undefined">Edit Event</a></div></td>';
+				$calendar .= '</tr>';
+					
+				}
 			}
+			
 			
 			// PULL PERSONAL AGENDA EVENTS
 			$userId = api_get_user_id();
 			$query2 = "SELECT id, user, title, text, course, date, all_day, enddate, videoconference FROM personal_agenda WHERE user = '$userId' AND date LIKE '%$today%'";
-			$result2 = mysqli_query($connect, $query2);
-			$row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
-			if (!empty($row2))
+			if ($result2 = mysqli_query($connect, $query2))
 			{
+				while ($row2 = mysqli_fetch_assoc($result2))
+				{
 				$calendar .= '<tr>';
 				$calendar .= '<td>' .$row2["date"]. '</td>';
 				$calendar .= '<td>' .$row2["title"]. '</a></div></td>';
 				/* https://thenounproject.com/term/video-camera/1998/ */
-				if ($row["videoconference"] == "Y"){
+				if ($row2["videoconference"] == "y"){
 					$calendar .= '<td><img src="../img/video.png"></td>';}
 				else {
-					$calendar .= '<td>' .$row["videoconference"]. '</td>';}
+					$calendar.= '<td></td>';
+				}
 				$calendar .= '<td>' .$row2["course"]. '</td>';
 				$calendar .= '<td> <div class = "personallist"><a href="./viewevent.php?i=' .$row2["id"]. '&t=p">View Event</a></div></td>';
+				$calendar .= '<td> <a href ="./calendaradd.php?action=edit&type=fromjs&id=personal_'.$row2["id"].'&course_id=undefined">Edit Event</a></div></td>';
+			
 				$calendar .= str_repeat('<p> </p>',2);
-				$calendar .= '</td></tr>';
+				$calendar .= '</tr>';
+				}
 			}
+			
 		
 	endfor;
 

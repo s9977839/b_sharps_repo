@@ -292,6 +292,7 @@ td {
     border-color: transparent;
     border-right-color: #ddd;
     border-bottom-color: #ddd;
+    vertical-align: top;
 }
 
 tr:last-child td {
@@ -324,7 +325,7 @@ li.invitations-icon {
 }
 
 /* CSS for the calendar */
-.calendar   { 
+.calendar { 
   position: relative;
   width: 100%; 
   border:1px solid #333333;
@@ -434,11 +435,26 @@ input[type="submit"] {
   margin: 5px;
   float: left;
 }
+/* CSS for calendar menu buttons */
+.calendarmenu {
+  padding:5px;
+  border: 1px solid #D3D3D3;
+}
+.calendarviewbutton {
+  padding: 5px;
+}
+.listviewbutton {
+  padding: 5px;
+}
+.addeventbutton {
+  padding: 5px;
+}
 
 /* CSS for the event description */
 table.eventdescription {
     border: 1px solid #333333;
     border-collapse: collapse;
+    width: 100%;
 }
 
 form  {
@@ -473,6 +489,23 @@ table.eventlist {
 table.eventlist tbody tr:nth-child(even) {
     background: #ffffff;
 }
+
+.vieweventmenu {
+  padding: 5px;
+  border: 1px solid #D3D3D3;
+}
+
+.backbutton {
+  padding: 5px;
+}
+
+.editevent {
+    padding: 5px;
+}
+
+
+
+
 
 
         
